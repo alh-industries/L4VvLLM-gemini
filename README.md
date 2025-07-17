@@ -28,6 +28,7 @@
    8) Create LLM-agnostic submission method  
    9) Implement reverse sync (GH → DB)  
    10) Enable LLM read-only access for status reports
+   11) [msft Teams integration!](https://github.com/integrations/microsoft-teams/blob/master/Readme.md) 
 
    <br> 
 
