@@ -6,10 +6,15 @@
 ### Tasks
 
 1) create L4V Github Project planner  
-   - current step: research GH Project custom fields  
+   - current step: try /repo/Issues
 
 <br>
 <br>
+
+- https://docs.github.com/en/issues/guides
+- https://github.com/marketplace
+- https://github.com/marketplace/jira-software-github
+
 <br>
 
 ### TASKS EXPANDED
@@ -17,7 +22,7 @@
 1) <details open>
    <summary>L4V github project planner</summary>
 
-
+   0) first try via /repo/Issues  
    1) Research GitHub Project custom fields  
    2) Build v1 GitHub Project in dedicated L4V repo  
    3) Manually enter starter tasks  
