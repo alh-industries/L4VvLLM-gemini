@@ -1,13 +1,13 @@
-# L4V0
-L4V repo #0
+### (L4V0: L4V repo #0)
 
 
 # L4V TO-DO LIST
 
+### Tasks
+
 1) create L4V Github Project planner  
    - current step: research GH Project custom fields  
 
----
 
 ## TASKS EXPANDED
 
