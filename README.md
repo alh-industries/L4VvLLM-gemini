@@ -14,10 +14,10 @@
 
 ### TASKS EXPANDED
 
-1) <details open> 
-   <summary> L4V github project planner</summary>
-   <br> 
-   
+1) <details open>
+   <summary>L4V github project planner</summary>
+
+
    1) Research GitHub Project custom fields  
    2) Build v1 GitHub Project in dedicated L4V repo  
    3) Manually enter starter tasks  
@@ -29,6 +29,7 @@
    9) Implement reverse sync (GH → DB)  
    10) Enable LLM read-only access for status reports
 
+   <br> 
 
    <details>
    <summary>even more expanded</summary>
