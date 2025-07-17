@@ -24,7 +24,7 @@
    4) Export project data (“Export view data”)  
    5) Design markdown-based database architecture  
    6) Write script to parse DB & auto-create GH issues  
-   7) Build rapid-intake web GUI  
+   7) Build rapid-intake web GUI  > [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates#issue-templates)
    8) Create LLM-agnostic submission method  
    9) Implement reverse sync (GH → DB)  
    10) Enable LLM read-only access for status reports
