@@ -6,7 +6,10 @@
 ### Tasks
 
 1) create L4V Github Project planner  
-   - current step: try /repo/Issues
+   - up next: try /repo/Issues
+   - upload plannerv2.md (see nLM)
+   - start transcribing in order to learn/dev Issues 
+   - once the setup is configured, use LLM to transcribe the remaining planner data 
 
 <br>
 <br>
