@@ -11,6 +11,15 @@
    - start transcribing in order to learn/dev Issues 
    - once the setup is configured, use LLM to transcribe the remaining planner data 
 
+Project/Issue units: 
+- labels (bug, duplicate, etc.) 
+- relationships (parent/sub issues)
+- milestones
+- status... (kanban's buckets: To Do, In Progress, Backlog) 
+   - not an option when creating new Issues?
+   - must assign to Project first; statuses are set at Project level 
+
+
 <br>
 <br>
 
