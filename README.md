@@ -20,11 +20,15 @@ Project/Issue units:
    - must assign to Project first; statuses are set at Project level
    - == any single select or iteration field
 
+https://github.com/alhllc/L4V0/issues
 
 L4V project setup: [custom board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)
 - "Buckets"
   - topmost level
   - Single Select or Iteration Field
+https://docs.github.com/en/issues
+https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout
+https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart
 
 
 <br>
