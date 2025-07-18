@@ -17,7 +17,14 @@ Project/Issue units:
 - milestones
 - status... (kanban's buckets: To Do, In Progress, Backlog) 
    - not an option when creating new Issues?
-   - must assign to Project first; statuses are set at Project level 
+   - must assign to Project first; statuses are set at Project level
+   - == any single select or iteration field
+
+
+L4V project setup: [custom board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)
+- "Buckets"
+  - topmost level
+  - Single Select or Iteration Field
 
 
 <br>
