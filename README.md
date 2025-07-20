@@ -1,12 +1,18 @@
 #### (L4V0: L4V repo #0)
 
-
 ## GH Projects (Issues) dev
 
 Hierarchy units
-- TOP == buckets
-   - field type: Single Select or Iteration
-   - 
+
+Kanban: 
+- TOP == buckets = view option > "Column By:"
+    -  field type: Single Select or Iteration
+    -  Single Select = add via settings
+    -  Iteration = time segment
+    -  default == "Status": Backlog, Ready, In Progress etc
+    -  Visible in group headers and value pickers
+
+
 
 
 
