@@ -12,8 +12,8 @@ Board layout:
       -  bucket names can only come from one Field collection at a time
    -  Option = the actual custom field data  
       -  arbitrary string + color
-      -  unlimited(?) Options (therefore buckets, categories, tags, etc.) can be added via settings
-      -  
+      -  unlimited(?) Options (therefore buckets, categories, tags, etc.) can be added via settings 
+-  duplicate Field collection to Slice or add sort dimension?? 
 
 - a Single Select or Iteration (custom) field
   - 
