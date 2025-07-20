@@ -4,11 +4,26 @@
 
 Hierarchy units
 
-Kanban: 
-- TOP == buckets = view option > "Column By:"
+Board layout: 
+
+- TOP layer (buckets) == (custom) "Options" within a (custom) "Field" 
+  -   a Field is a collection of custom "Options" 
+      -   Field type can be Single Select (custom string) or Iteration (custom time segment)
+      -  bucket names can only come from one Field collection at a time
+   -  Option = the actual custom field data  
+      -  arbitrary string + color
+      -  unlimited(?) Options (therefore buckets, categories, tags, etc.) can be added via settings
+      -  
+
+- a Single Select or Iteration (custom) field
+  - 
+- 
+- == view option > "Column By:" > [custom field] > ["Option"]
     -  field type: Single Select or Iteration
-    -  Single Select = add via settings
-    -  Iteration = time segment
+       -  Single Select = custom attribute
+          -  Kanban: "Status"  Backlog, Ready, In Progress
+          -  Bug tracker: "Priority" P0, P1, P2
+       -  Iteration = custom time segment
     -  default == "Status": Backlog, Ready, In Progress etc
     -  Visible in group headers and value pickers
 
