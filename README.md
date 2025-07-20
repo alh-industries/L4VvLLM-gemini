@@ -1,4 +1,12 @@
-### (L4V0: L4V repo #0)
+#### (L4V0: L4V repo #0)
+
+
+## GH Projects (Issues) dev
+
+Hierarchy units
+* TOP == buckets
+- field type: Single Select or Iteration
+
 
 
 # L4V TO-DO LIST
