@@ -16,11 +16,13 @@ SETUP Qs:
 
 
 How automations work will determine the usecase for Labels
-automation ex: G.Ads label > Google bucket
-Labels = displayed in ~all views
-set as middle granularity? 1 below buckets: G.Ads, G.TagMgr, Meta (FB+IG), mobile website, Intaker, ...
-buckets = google, website, social media, Marketing, emails, documentation,...
+- automation ex: G.Ads label > Google bucket
+- Labels = displayed in ~all views
+- set as middle granularity? 1 below buckets: G.Ads, G.TagMgr, Meta (FB+IG), mobile website, Intaker, ...
+- while buckets = google, website, social media, Marketing, emails, documentation,...
+- then Milestones = campaigns with tasks from various buckets (fix g.ads = g.tags + g.analytics + g.search +...)
 
+  
 Automations (Workflows):
 - Project > (3 dots menu) > Workflows 
 - has subs = add "parent" label
