@@ -1,7 +1,35 @@
 #### (L4V0: L4V repo #0)
+ 
+## L4V Project planner
+
+SETUP Qs: 
+- Google bucket?
+  - bucket per Individual service or 1 mega bucket? 
+  - "Google" custom Tag instead of bucket?
+    -  con? will not show as a Bucket/column
+    -  pro: 1 fewer bucket  
+- Social media
+  - Meta
+  - Other..
+
+
+1. Buckets = major project unit
+   - Website
+   - Google ads
+   - Google analytics
+   - Social media
+2. (Parent) Issue = big task
+3. Sub-issue = sub tasks 
+   - create within OR add existing Issue to Parent
+   - up to 100 sub-issues per issue
+   - up to 8 levels of nested sub-issues
+
+
+
 
 ## GH Projects (Issues) dev
 
+https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects
 Hierarchy units
 
 Board layout: 
@@ -10,12 +38,12 @@ Board layout:
   -   a Field is a collection of custom "Options" 
       -   Field type can be Single Select (custom string) or Iteration (custom time segment)
       -  bucket names can only come from one Field collection at a time
-   -  Option = the actual custom field data  
+   -  Option = the custom field name  
       -  arbitrary string + color
       -  unlimited(?) Options (therefore buckets, categories, tags, etc.) can be added via settings 
--  duplicate Field collection to Slice or add sort dimension?? 
+      -  ex: Bug tracker = P0, P1, P2; Kanban = Status, Backlog, Ready, To Do...
+   -  NOTES: duplicate Field collection to  
 
-- a Single Select or Iteration (custom) field
   - 
 - 
 - == view option > "Column By:" > [custom field] > ["Option"]
