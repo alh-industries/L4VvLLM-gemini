@@ -11,18 +11,44 @@ SETUP Qs:
 - Social media
   - Meta
   - Other..
+- ISSUE TEMPLATES
+  - sub-issue template.. basic L4V attribs (repo, status, automation, etc.) 
 
 
-1. Buckets = major project unit
-   - Website
-   - Google ads
-   - Google analytics
-   - Social media
-2. (Parent) Issue = big task
-3. Sub-issue = sub tasks 
+Automations (Workflows):
+- Project > (3 dots menu) > Workflows 
+- has subs = add label?
+- created by me = assigned to me (default view of github.com/issues)
+- sub issue = add "sub" label 
+- parent into milestone = sub into milestone
+
+
+
+
+Issues: 
+- basic unit of Projects
+- live independently from repos and projects
+- Can apply the custom fields (labels, etc.) of the Repo or Project they are assigned to
+1. (Parent) Issue = big task
+2. (Sub) Issue = sub tasks 
    - create within OR add existing Issue to Parent
    - up to 100 sub-issues per issue
    - up to 8 levels of nested sub-issues
+
+
+
+Milestones: (Repo > Issues or PR > Milestones )
+- collection of Issues
+- 
+
+
+1. "Buckets": (Project > settings > custom fields > Single Select)
+   1. Status = GH default
+
+2. Label 
+   1. REPO SPECIFIC > use the label on any issue, pull request, or discussion within that repo
+   2. default Labels managed by org > https://docs.github.com/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization
+   3. Appears in Issues panel 
 
 
 
