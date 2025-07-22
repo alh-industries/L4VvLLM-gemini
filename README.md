@@ -23,6 +23,16 @@ Automations (Workflows):
 - parent into milestone = sub into milestone
 
 
+Issues
+- independant units (tasks)
+Repo: 
+- Label
+- Milestone
+- Assignee
+Project
+- custom fields
+- premade Workflows
+
 
 
 Issues: 
