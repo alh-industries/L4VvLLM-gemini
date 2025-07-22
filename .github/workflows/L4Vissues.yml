@@ -10,11 +10,11 @@ jobs:
     permissions:
       issues: write
     steps:
-      - run: gh issue edit "$NUMBER" --add-label "$LABELS" --add-assignee "alhllc"
+      - run: gh issue edit "$NUMBER" --add-label "$LABELS" --add-project "L4V-plan0" --add-assignee "alhllc"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          LABELS: triage
-# how to Add assignee? 
-# run: gh assignee edit ...? https://cli.github.com/manual/gh_issue_edit
+          LABELS: triage 
+          
+# when opening an Issue in this repo, assign [line 13: labels, project, user]
