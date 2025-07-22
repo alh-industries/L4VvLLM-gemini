@@ -15,16 +15,22 @@ SETUP Qs:
   - sub-issue template.. basic L4V attribs (repo, status, automation, etc.) 
 
 
+How automations work will determine the usecase for Labels
+automation ex: G.Ads label > Google bucket
+Labels = displayed in ~all views
+set as middle granularity? 1 below buckets: G.Ads, G.TagMgr, Meta (FB+IG), mobile website, Intaker, ...
+buckets = google, website, social media, Marketing, emails, documentation,...
+
 Automations (Workflows):
 - Project > (3 dots menu) > Workflows 
-- has subs = add label?
+- has subs = add "parent" label
 - created by me = assigned to me (default view of github.com/issues)
 - sub issue = add "sub" label 
 - parent into milestone = sub into milestone
 
 
 Issues
-- independant units (tasks)
+- independant units/tasks
 Repo: 
 - Label
 - Milestone
