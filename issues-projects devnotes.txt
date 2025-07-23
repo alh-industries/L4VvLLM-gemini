@@ -8,21 +8,43 @@ SETUP?:
 - build off the Kanban template
 - try not to change defaults (to preserve prebuilt and documentation fxns) 
  
-Project custom fields:
-- Status: (defaults) + triage
-- L4V buckets
-- Google
-- Social media
-- Emails
 
 
-Repo Labels
+
+Repo lvl: 
+- Labels, "at a glance"  badges
+- triage (testing Action) 
 - G.Ads
 - G.Analytics
 - G.Business
 - G.SConsole
-- 
+- Meta (FB+IG) 
+Actions: 
+- on issue commit within parent repo >> label "triage" + assign to alhllc 
 
+Project lvl:
+custom fields:
+- Status: (defaults)
+- L4V buckets: 
+- Google
+- Social media
+- Emails
+- documentation (databases?) 
+Workflows: 
+- on issue commit within [L4V repo] >> add to [Backlog] bucket 
+
+
+How to remove "triage" label when Issue status exits [Backlog] bucket? (and do the reverse) 
+
+```
+On:
+Issues:
+Status: Triage  # find documentation for CLI triggers
+... 
+run: gh issue edit --add-label "Triage" 
+ ???
+
+```
 
 
 ----------------------------------
@@ -36,8 +58,10 @@ How automations work will determine the usecase for Labels
 - then Milestones = campaigns with tasks from various buckets (fix g.ads = g.tags + g.analytics + g.search +...)
 
   
-Automations (Workflows):
-- COMMANDS: https://cli.github.com/manual/gh_issue
+Automations (Repo Actions, Project Workflows):
+- CLI commands (action.yml scripts; "THEN" actions) : https://cli.github.com/manual/gh_issue
+- repo: add-to-Project actions, examples https://github.com/actions/add-to-project
+- Actions repo https://github.com/actions
 - triggers: https://docs.github.com/en/actions/how-tos/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow
 - add label upon Issue commit: https://docs.github.com/en/actions/how-tos/use-cases-and-examples/project-management/adding-labels-to-issues#creating-the-workflow
 
