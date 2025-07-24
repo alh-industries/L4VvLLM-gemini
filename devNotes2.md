@@ -6,7 +6,13 @@
 #### Hierarchy, starting with least specific:
 
 ```
+ metadata hierarchy:
+
+Property?? >
+
 Type > Label > Field 
+
+
 ```
 
 
