@@ -3,6 +3,8 @@
 
 ### Projects notes
 
+#### Hierarchy, starting with least specific:
+Type > Label > Field 
 
 Issues, Repo settings:
 Labels needed
