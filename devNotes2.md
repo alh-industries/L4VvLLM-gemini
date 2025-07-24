@@ -3,9 +3,27 @@
 
 ### Projects notes
 
+Labels needed
+- indicates a sub-issue (parent-issue displays [x/y] tag)
+- STUCK
+- NEEDS REPLY
+- 
+
+[Custom fields](https://github.com/orgs/alh-industries/projects/1/settings/fields/Status): 
+
+- [Software]: Photoshop, Illustrator, LightRoom,  
+- [Vendor]: SimpleLaw, Docusign, GoDaddy, Google, Intaker, Wix, Hostgator, MSFT, 
+- [User Request]: Joe, Stella, Lindsay,
+- [Partner]
+
+
+[Custom Type](https://github.com/organizations/alh-industries/settings/issue-types): 
+
 #### Fields that appear in [view]
 -  view: repo > Issues
-   -  Label, [x/y] sub-Issues, Assignee, Estimate #, Milestone, Comments, Type
+   -  Label, [x/y] sub-Issues, Assignee, Estimate #, Milestone, Comments,
+   -  Type: single choice (bug, feature, task). can it be customized? >> [org settings](https://github.com/organizations/alh-industries/settings/issue-types)!
+      - use to indicate bug or task vs... documentaion? notes?
 -  view: Issues button
 -  <img width="876" height="725" alt="image" src="https://github.com/user-attachments/assets/8f7be898-6129-49d3-b6f1-93e0ff75453e" />
 
