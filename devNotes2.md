@@ -18,6 +18,10 @@ Labels needed
 
 
 [Custom Type](https://github.com/organizations/alh-industries/settings/issue-types): 
+- an Issue custom tag/category/etc, repo agnostic 
+- high level, higher than repo 
+- what can be done with Type field? Slice? 
+- try: LLM, 
 
 Custom Proprty??? https://github.com/organizations/alh-industries/settings/custom-property/Custom-ALHProperty
 
