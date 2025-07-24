@@ -5,9 +5,9 @@
 
 #### Hierarchy, starting with least specific:
 
-'''
+```
 Type > Label > Field 
-'''
+```
 
 
 Repo settings:
