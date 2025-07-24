@@ -1,5 +1,8 @@
+```
 devNotes become README
 when ready, duplicate this file and save as new README.md
+last "export": 2025-07-23
+```
 
 #### (L4V0: L4V repo #0)
  
