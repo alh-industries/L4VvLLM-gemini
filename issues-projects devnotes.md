@@ -1,6 +1,7 @@
 ```
 devNotes become README
 when ready, duplicate this file and save as new README.md
+-
 last "export": 2025-07-23
 ```
 
