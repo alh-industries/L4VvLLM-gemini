@@ -4,10 +4,14 @@
 ### Projects notes
 
 #### Hierarchy, starting with least specific:
-Type > Label > Field 
 
-Issues, Repo settings:
-Labels needed
+'''
+Type > Label > Field 
+'''
+
+
+Repo settings:
+Custom Labels: 
 - indicates a sub-issue (parent-issue displays [x/y] tag)
 - STUCK
 - NEEDS REPLY
