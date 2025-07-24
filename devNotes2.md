@@ -3,12 +3,15 @@
 
 ### Projects notes
 
+
+Issues, Repo settings:
 Labels needed
 - indicates a sub-issue (parent-issue displays [x/y] tag)
 - STUCK
 - NEEDS REPLY
 - 
 
+Projects settings:
 [Custom fields](https://github.com/orgs/alh-industries/projects/1/settings/fields/Status): 
 
 - [Software]: Photoshop, Illustrator, LightRoom,  
@@ -20,8 +23,9 @@ Labels needed
 [Custom Type](https://github.com/organizations/alh-industries/settings/issue-types): 
 - an Issue custom tag/category/etc, repo agnostic 
 - high level, higher than repo 
-- what can be done with Type field? Slice? 
-- try: LLM, 
+- IMPORTANT: what can be done with Type field? Slice? 
+- "what Issue type do I want to track across every repos/projects/clients/"
+- try: LLM, urgent, in review, stalled, blocked, dead, need feedback, awaiting reply 
 
 Custom Proprty??? https://github.com/organizations/alh-industries/settings/custom-property/Custom-ALHProperty
 
