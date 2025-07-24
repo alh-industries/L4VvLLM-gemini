@@ -19,6 +19,8 @@ Labels needed
 
 [Custom Type](https://github.com/organizations/alh-industries/settings/issue-types): 
 
+Custom Proprty??? https://github.com/organizations/alh-industries/settings/custom-property/Custom-ALHProperty
+
 #### Fields that appear in [view]
 -  view: repo > Issues
    -  Label, [x/y] sub-Issues, Assignee, Estimate #, Milestone, Comments,
