@@ -1,5 +1,16 @@
 # devNotes pt3
 
+
+example tag setups 
+- https://forum.openrefine.org/t/cleaning-up-our-github-issue-labels/755/23
+- https://docs.google.com/document/d/19LLxQxQNgELxSuxT8nwgoWEHMdlGjjnJO20zFsZpLak/edit?tab=t.0
+- https://docs.google.com/spreadsheets/d/1pbZ2ZsNq5cRCn2JhTT_HNUK7PreWumqD/edit?gid=926178593#gid=926178593
+- https://robinpowered.com/blog/best-practice-system-for-organizing-and-tagging-github-issues
+- https://imgur.com/XnKDC76
+- https://github.com/alh-industries/L4V-ORGv1/labels
+
+
+
 IMPORTANT: 
 
 - automation triggers / actions help define custom Type/Label/Field and their interactions
