@@ -10,7 +10,7 @@ docs
 - triggers https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#issues
   - issue... open, edit, delete
   - un/labeled
-  - un/typed (Bug, Feature, etc.... set at ORG level) 
+  - un/typed (e.g. Bug, Task, Feature,.... define Types in ORG settings) 
 
 
 ## automation ideas
