@@ -5,6 +5,13 @@
 1. Repo > GH Actions
 2. Project > Workflows
 
+docs
+
+- triggers https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#issues
+  - issue... open, edit, delete
+  - un/labeled
+  - un/typed (Bug, Feature, etc.... set at ORG level) 
+
 
 ## automation ideas
 
