@@ -1,3 +1,21 @@
+triggers: 
+
+- label
+  - created
+  - edited
+  - deleted
+
+- un/Label = trigger when Label un/added to Issue,etc., 
+
+```
+If [action] > then create Label
+
+If Label is created > [then...]
+> on: label: types: created
+
+add Label? Type? idfk
+```
+
 # GH Issues automations (Actions, Workflows) dev notes
 
 ### Automations hierarchy: 
