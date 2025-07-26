@@ -7,6 +7,10 @@ triggers:
 
 - un/Label = trigger when Label un/added to Issue,etc., 
 
+Command: 
+- use Template > Template defines settings group
+
+
 ```
 If [action] > then create Label
 
