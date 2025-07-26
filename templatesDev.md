@@ -1,3 +1,9 @@
+## Templates docu
+
+- https://dev.to/chaudharidevam/streamline-your-github-issues-custom-issue-templates-made-easy-4mge
+- https://www.ssw.com.au/rules/rules-to-better-scrum-using-github/
+- https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/common-validation-errors-when-creating-issue-forms
+
 
 ## Template types
 
