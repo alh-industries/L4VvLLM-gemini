@@ -1,5 +1,10 @@
 # devNotes pt3
 
+IMPORTANT: 
+
+- automation triggers / actions help define custom Type/Label/Field and their interactions
+  - e.g. can setting Type > apply Labels?  
+
 Type
 - allows Users to see all Issues of that Type across all Repos/Projects/Clients/etc
 - ex: [Bug, Task, Feature], AI/LLM, CRITICAL, Stalled, Broken, Client Request, Info,...
