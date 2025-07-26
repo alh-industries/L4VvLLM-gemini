@@ -1,17 +1,30 @@
 # devNotes pt 2
 
+## Hierarhy custom tags
+
+Types:
+- Tech
+
 
 ### Projects notes
+
+
+
+
+
+
+
 
 #### Hierarchy, starting with least specific:
 
 ```
- metadata hierarchy:
+metadata hierarchy:
 
 Property?? >
 
-Type > Label > Field 
-
+Type >
+Label >
+Field 
 
 ```
 
