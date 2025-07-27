@@ -1,0 +1,15 @@
+
+- run: gh issue edit "$NUMBER" --add-label "$LABELS" --add-assignee "alhllc"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          LABELS: triage 
+
+
+gh issue create -t "TITLE" -b BODYtxt; 
+
+
+gh issue create
+-t "$TITLE" 
+-b "$BODY"; 
