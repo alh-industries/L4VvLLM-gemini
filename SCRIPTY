@@ -1,4 +1,10 @@
 
+
+# gh issue create... https://cli.github.com/manual/gh_issue_create
+
+# can assign: title, body, template, label, milestone, project, assignee  
+
+
 - run: gh issue edit "$NUMBER" --add-label "$LABELS" --add-assignee "alhllc"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -7,9 +13,15 @@
           LABELS: triage 
 
 
-gh issue create -t "TITLE" -b BODYtxt; 
+gh issue create -t $TITLE -b $BODY;
+ 
 
 
 gh issue create
 -t "$TITLE" 
 -b "$BODY"; 
+
+
+# combine multiple bodies?
+
+gh issue create -t "$TITLE" -b "$BODY1 + $BODY2 + $BODY3";
