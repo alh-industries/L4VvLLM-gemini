@@ -1,0 +1,1199 @@
+| gh issue create -t "$TITLE" -b "$BODY1 + $BODY2 + $BODY3"; | $TITLE | $BODY1 | $BODY2 | $BODY3 |
+
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+| | DNS Domain auth keys are on Wix | For Longevity sake | | |
+
+| | get GAds under GA4, all under new marketing platform | For Longevity sake | | |
+
+| | Update dns domain tags with MS, Wix, DS | For Longevity sake | | |
+
+| | ADMIN for g.ads | GOOGLE ANALYTICS | | cannot link to ads acoount without admin rights |
+
+| | Complete account setup | GOOGLE ANALYTICS | | |
+
+| | Create a link with Google Ads | GOOGLE ANALYTICS | | |
+
+| | edit domain config for tag | GOOGLE ANALYTICS | | |
+
+| | google ads settings | GOOGLE ANALYTICS | | goals > conversions > summary > settings > google analytics property ;conversion id, destination id - AW-11030537154 |
+
+| | google ads TO DO | GOOGLE ANALYTICS | | law4veterans.com/#burn;check Troy's ads for URLs;tags support says: change conversion goals away from default & point at website instead of e.g. UA |
+
+| | Brian owned | google conversion tags | | L4V tag mgr container - GTM-54HN8L4T ;G-0HGTJKFYN0... wix google tag integration;Law4Veterans Google Tag Mgr - 629 129 990 6;L4V GAnanlytics Account - 346 616 544 |
+
+| | google analytics, old setup | google conversion tags | | conversion ID 11030537154... found in G.ads > goals > campaign action settings > tag options ;Troy owns google ads account;OLDER > "Law4Veterans.com. Joseph M. Bochicchio, PLLC (UA-249921957-17)";??? owns google analytics property "Law4Veterans.com. Joseph M. Bochicchio, PLLC - GA4 (401830982)" |
+
+| | google tag mgr | google conversion tags | "1. Use Google Tag Manager to \[install the Google Ads conversion tracking tag\](https://support.google.com/tagmanager/answer/6105160?hl=en\_US). You’ll need to provide the following information for your \*\*Website Contact Form\*\* conversion action:
+
+|
+
+|
+
+|
+
+| Conversion ID
+
+|
+
+|
+
+|
+
+| 11030537154
+
+|
+
+|
+
+|
+
+| Conversion label
+
+|
+
+|
+
+|
+
+| tocRCJ3awdkZEMLH4osp" | |
+
+| | to do | google conversion tags | | REQUIRES: ads campaign admin access;edit individual campaign's settings for analytics referrals (tag settings) ;determine which campaigns troy wants linked to what website actions |
+
+| | TROY DO THIS SHIT - google ads | google conversion tags | | Conversion Action ... Set conversion value ??;TRACKING TEMPLATE to BLANK???;GIVE ADMIN?: cannot link to g.analytics account;enable parallel tracking;account setting > lead form ads terms NOT accepted |
+
+| | Intaker = poor mobile experience? | INTAKER INTALL 2K25 HAPPY EASTER | | |
+
+| | intaker install > wix site | INTAKER INTALL 2K25 HAPPY EASTER | intaker custom HTML https://dashboard.intaker.com/bots/publish .... and domain rules?? | 2) or use domain rules (/bots/publish) ??? ... not sure if code injection still required;1) inject header code into Wix ... https://dashboard.intaker.com/bots/publish ;remove wix chat, GOOD RIDDANCE MFFFFFFFF;audit / fix intaker+wix mobile website;use Intaker HTML button code?? ... sucked ass when I tried last |
+
+| | intaker Qs for Joe | INTAKER INTALL 2K25 HAPPY EASTER | | assign Leads within Intaker? (> research Docusign integration) ;spam prevention? = 2fa sms to submit again;or Joe simply fwd Intaker email regardless?;use intaker phonecall button or intaker phone service? ;live-call connect? intaker instantly dials Firm upon Lead phone # submission;do we need Firm users saved in Intaker? Stella, Debbie, etc. |
+
+| | Joe's INTAKER reqs | INTAKER INTALL 2K25 HAPPY EASTER | """Maybe we make it:
+
+|
+
+|
+
+|
+
+| 1. Do you have a Veteran’s disability claim?
+
+|
+
+| 2. Was the Ratings Decision within the last year?
+
+|
+
+| 3. Would you like to schedule a free consultation? If ‘yes’…then
+
+|
+
+| 4. Type in your name, email, and phone number""" | \[🐊 wanted Lead as reply-to, so Joe decides email contact... use pass-thru inbox, solve 2x probs\];LEAD'S EMAIL > how to get/send decision letter;Feb17: consultations@, bcc debbie, stella, joe;\[🐊 Intaker Lead info fields is set at the chatbot level, for all chat flows;"don’t care if we use Wix or Intaker ultimately… I just want it all to work";FAQ on the chatbot;edit any "free consultation with \*joe\*" ,, stella/debbie also do consults;"WIX dashboard is more difficult to use, and we were having trouble getting fill in forms";"use Intaker for leads, and WIX for mobile website leads?";"I agree that if \[chatbot mssg is\] coming to me, they are only communicating with a lawyer";put debbie@ for RD recipient;LEAD's EMAIL >> “please send us a copy of the RD”…. where would they send it to? ;CHANGE >> "can i help you?" popup = lawyers initiating contact = unethical ;set LEAD EMAIL reply-to = joe@l4v ... Lead can send RD via replying to email ;personalize "chatbot" icons with Joe's pic, name >> edit chat copy to first person? |
+
+| | L4V v3.0 chatbot - intaker high level TO DO | INTAKER INTALL 2K25 HAPPY EASTER | "L4V v3.0 landing page:
+
+|
+
+|
+
+|
+
+| https://www.intaker.com/law4veterans/L4Vv3.0" | add instructions re: how Leads submit Letters... email, scan,....?? ;"Text us widget" ... joe says "sure, just not my cell. do later;BOT (v3.0), WORKING VERSION >>> https://www.intaker.com/law4veterans/L4Vv3.0;"contacts widgets" ... unknown. likely cannot claim current L4V 1-866-num from Twilio ;remove ALL emojis (default responses) ;edit popup text in "mini widget" and "pop up" > worded so we aren't initiating contact;future research: sequences, workflows, integrations, analytics, Leads (2022-2025) .... ;---;INSTALL ON WEBSITE, replace wix chat;complete "landing page" ... low priority. pic? colors?... link to Ads/tag mgr eventually;future tasks: update Organization profile;apply remaining joe edits??? shared reply-to inbox? etc. |
+
+| | LATER /intaker side projects | INTAKER INTALL 2K25 HAPPY EASTER | "- intaker AI qualifier  (+integrations) ....
+
+|
+
+|
+
+|
+
+| AI-sort Leads with LLM vomit > calendar integration > auto-sched consult ... MUTE >> https://intaker.azureedge.net/new-dashboard/video/Qualifiers.mp4
+
+|
+
+|
+
+|
+
+| - integrations https://dashboard.intaker.com/integration/list" | |
+
+| | 🐊 NOTES: intaker readme | INTAKER INTALL 2K25 HAPPY EASTER | | settings menus have no logic == look thru every setting to change any one thing, lol . . . ;must request "script" changes via support (email);open every drop-down for "advanced settings" == most of the bot features ;working version is "L4V v3.0" |
+
+| | Competitor | Isa | https://ptsdlawyers.com/board-of-veterans-appeals/ | https://ptsdlawyers.com/board-of-veterans-appeals/ |
+
+| | Schema guideline to improve SEO | Isa | "Step 2 shows how to create Schema and include LIST codes to improve search results
+
+|
+
+|
+
+|
+
+| https://www.legaltechdesign.com/2021/05/tag-your-law-how-can-i-use-the-list-taxonomy-on-my-legal-tech-project/" | Brian says: actually writing seo tags, etc., must happen before improvement planning.;Excellent resource is Yoast (check for wix plugin?);Probably excellent resource is Wix seo checklist/wizard |
+
+| | JOE BRANDING REQUESTS | JOE'S REQs & REQs \[REQUESTS+REQUIREMENTS\] | | love original american flag + dogtag logo ;love "go with joe" logo > change graphic to joe's silhouette > headshot + photoshop > indesign? |
+
+| | Joe requests | JOE'S REQs & REQs \[REQUESTS+REQUIREMENTS\] | | remove dates from google reviews? |
+
+| | refresh L4v /Joe logos | JOE'S REQs & REQs \[REQUESTS+REQUIREMENTS\] | | re-do silhouette logo using joe's outline;".com" logo ending? |
+
+| | \[DB\] BRAND COLORS ... hexcolors, etc. | L4v "databases" \[DB\] | https://colordesigner.io/compare-colors | Intaker OG (bold blue): 498fe1;Canva 1 (LT blue): 7dc1ff;Canva 2 (DK blue): 6995b5 |
+
+| | create L4V roles/users/aliases (m365) | L4v "databases" \[DB\] | | shared docusign inbox?;create report / spreadsheet (copilot?);marketing@;admin@ |
+
+| | database for L4V usage rules, technicals, ethics | L4v "databases" \[DB\] | "official biz entities
+
+|
+
+|
+
+|
+
+| dba?
+
+|
+
+|
+
+|
+
+| joe's stance on mkting claims" | "established" dates;Biz entities: jmb pllc;accolades, bona fides;DBA? |
+
+| | database ideas | L4v "databases" \[DB\] | | points of contact (phones, emails);licenses, memberships, bonafides;hashtags;(disentangle DLH~L4V);review website profiles - google biz, avvo, trust pilot, etc;competitors/inspo;ad copy usage rules;accolades;digital asset map (photos, logos, media packet,);social media profiles |
+
+| | L4V CASE HISTORY | L4v "databases" \[DB\] | | spreadsheet: client, date of contact/appeal/ruling, injury/claim, geo locale, $award (+fee);Generate using copilot + prevail files?;SEE JOE's SPREADSHEET (in bbdigital email) - (2022-24?) |
+
+| | Legal Taxonomy resource for VA terms | L4v "databases" \[DB\] | https://taxonomy.legal/terms/VE-00-00-00-00/veterans-and-military | |
+
+| | ??????? wix | l4v website, low priority | | how the fuck do containers work;customize org links / assets / socials icons?? |
+
+| | custom "socials bar" | l4v website, low priority | "createflat monocolor icons for: review sites, accreditation, accolades, etc  
+
+|
+
+|
+
+|
+
+| put them in the footer... == google reviews on every page" | google reviews/business;avvo?;linked in;put them in the footer... == google reviews on every page |
+
+| | FAQ page | l4v website, low priority | | can dynamic collection display like i want;dynamic collection FAQ in place of blog? SEO implications? |
+
+| | RESEARCH | l4v website, low priority | | https://dev.wix.com/docs/develop-websites/articles/workspace-tools/developer-tools/triggered-emails/;triggered emails vs wix automations. same thing? |
+
+| | research stubs | l4v website, low priority | accept doc uploads via wix site?: https://www.reddit.com/r/WIX/comments/17s9x2y/best\_practices\_uploading\_images\_and\_saving\_records/ | |
+
+| | RESEARCH: website Badges?? shit to join??? | l4v website, low priority | | https://www.nclawspecialists.gov/for-lawyers/for-certified-specialists/media-kit/;https://www.nclamp.gov/;https://www.americanbar.org/groups/specialization/organizations-with-aba-accredited-lawyer-certifica;https://www.nclamp.gov/for-military-personnel-family/finding-a-lawyer/;https://www.ncbar.gov/media/730802/legal-resource-finder.jpg |
+
+| | scrape archived L4V sites (wayback machine) | l4v website, low priority | https://web.archive.org/web/20250000000000\*/https://www.law4veterans.com/ | audit additional pages, URLs;determine useful website versions and their dates;save URL of each;(ChatGPT) old copy + SEO keyword analysis = new copy ;scrape copy and save to... OneNote? |
+
+| | Search Console link to backlinks | l4v website, low priority | https://search.google.com/search-console/links?resource\_id=sc-domain:law4veterans.com | |
+
+| | audit SEO of old websites | L4V x Wayback Archive | | anchor links;copy content, as pertaining to SEO ;URL slugs;SEO tags? ;previous homepage was stuffed with SEO and anchor links |
+
+| | Jessica's website | L4V x Wayback Archive | \[Sep 15, 2022 - Aug 20, 2024\] https://web.archive.org/web/20240820140802/https://www.law4veterans.com/ | |
+
+| | Landing page?? | L4V x Wayback Archive | \[Nov 23, 2024\] https://web.archive.org/web/20241123111758/https://www.law4veterans.com/lander | |
+
+| | law4veterans.com/#burn | L4V x Wayback Archive | | \[INSERT ARCHIVE LINK\] |
+
+| | scrape copy from old websites | L4V x Wayback Archive | "Copy of important website copy,  in a usable, easy to access way. 
+
+|
+
+|
+
+|
+
+| Prompt gpt to rip copy from wayback machine 
+
+|
+
+|
+
+|
+
+| Later: sundown HostGator and GoDaddy" | wayback > site map;new copy = old copy + SEO keywords ;scrape w/GPT |
+
+| | Troy's website | L4V x Wayback Archive | "1 \[???- 2019\] https://web.archive.org/web/20190202092700/https://law4veterans.com/
+
+|
+
+|
+
+|
+
+| 2 \[Nov 2020 - March 12, 2022\] https://web.archive.org/web/20220312062549/https://www.law4veterans.com/
+
+|
+
+|
+
+|
+
+| 3 \[May 27, 2022 - July 12, 2022\] https://web.archive.org/web/20220712172305/https://www.law4veterans.com/https://web.archive.org/web/20220712172305/https://www.law4veterans.com/" | |
+
+| | clean up L4V canva folders, permissions | low priority | | price check Canva;separate all from guga's account?;any good alts? don't think so |
+
+| | clean up L4V/DLH msft project files | low priority | | delete Planner stubs, archive old;start in Sharepoint? |
+
+| | dba/trade name | low priority | https://ncleg.gov/Laws/GeneralStatuteSections/Chapter55D | NC Bar does not care;https://www.ncbar.gov/for-lawyers/ethics/adopted-opinions/2005-formal-ethics-opinion-8/;must register DBA in at least 1 county ;trademark search https://tmsearch.uspto.gov/search/search-information;nc dba form: https://edpnc.com/wp-content/uploads/2024/03/A-Assumed-Business-Name-Certificate-1.pdf;meck county dba: https://meckrod.manatron.com/localization/asninfo.htm |
+
+| | google analytics | low priority | | UTM ;configure site tags: analytics>L4V account>property settings>data streams |
+
+| | google partner????? FK troy | low priority | | https://enterprisemarketingportal.google/become-a-partner |
+
+| | google search console | low priority | | 1: added L4v domain via search console panel ;TWO properties?? ;https://www.wix.com/seo/learn/resource/wix-site-inspection-tool;reddit says: check html header for old tag data;2: added google tag via wix marketing integrations |
+
+| | L4V branding kits | low priority | | fonts, styles, colors;wix;adobe;canva |
+
+| | L4V Email blue check (in Gmail) | low priority | | BIMI? https://support.google.com/a/answer/10911028?dark=1&sjid=17664652614073739543-NA |
+
+| | SEO | low priority | | https://www.reddit.com/r/SEO/comments/hrcbv9/wix\_seo\_issues/;https://www.reddit.com/r/WixHelp/comments/18oazro/meta\_descripton\_business\_what\_am\_i\_missing/;https://www.wix.com/seo/learn/resource/what-is-google-search-console#viewer-5ybih31321 |
+
+| | Simple Law renewal??? | low priority | | when?;August;Ditch simple law? Lol |
+
+| | stella docusign email notifs | low priority | | stella@law4veterans.com seems to be a default recipient in the notification flow;CAN STELLA JUST HIT "UNSUBSCRIBE" LINK ???? (mostly no);debbie@, stella@ both trigger email to stella@ when they send envelope to client;unclear if joe@ also triggers;evaluate fix;what does "report email" hyperlink do? |
+
+| | web vs desktop apps | low priority | | canva;misc meta business shits |
+
+| | wix certs | low priority | | https://www.wix.com/learn/certification/accessibility;https://www.wix.com/studio/academy/web-designer-certification-criteria |
+
+| | \[DB\] BRANDING PACKET /LIBRARY | MAJOR TASKS | | logos;colors: ;wordmark |
+
+| | \[DB\] LIST OF PHONE NUMBERS | MAJOR TASKS | "real" numbers 704-543-2294 and 704-940-0353 | 704-318-4777 - https://www.instagram.com/p/ChKYdh0Or8D/;(704-940-0353 - Troy's default);(704-543-2294) ;intaker > settings > "intaker phone number" (704) 389-9901 ... fwds to (704) 940-0353 |
+
+| | audit /update L4V phone numbers | MAJOR TASKS | "List of phone numbers as listed in OneNote: Phone numbers  (\[Web view\](https://belagenie.sharepoint.com/sites/L4V/\_layouts/OneNote.aspx?id=/sites/L4V/SiteAssets/Law4Veterans x ALH x Sharepoint&amp;wd=target(L4V -- TO DO.one|9EF84E29-BDFB-4057-A174-B3FEC91AD67D/Phone numbers|96E285E8-53E2-4773-8505-FBB05B29509E/)))
+
+|
+
+|
+
+|
+
+| 704-940-0353 |
+
+|
+
+|
+
+|
+
+| https://www.800forall.com/SearchWhoOwns.aspx
+
+|
+
+|
+
+|
+
+| ""Law for Vets"" = 529-367-8377
+
+|
+
+|
+
+|
+
+| (704) 940-0353\[Joseph M. Bochicchio, PLLC \\| BBB Business Profile \\| Better Business Bureau\](https://www.bbb.org/us/nc/charlotte/profile/bankruptcy-attorney/joseph-m-bochicchio-pllc-0473-235726/)" | trace numbers to campaigns (/platforms?);wait for Troy's report (email) ;Troy: defaulting 704-940-0353 (joe says "that's one of my actual land line numbers");(product) research > phone # generator +analytics ;see @isa notes for #s;bbb.org: (704) 940-0353;Troy : all L4v-800 numbers untrackable;DATABASE: L4v #s, attached channel,;attach (unique?) #s to every profile > IG, FB, website, ads |
+
+| | brianbakerdigital did NOT receive Form completion notification | MAJOR TASKS | | |
+
+| | choose: Wix chat vs Intaker | MAJOR TASKS | | |
+
+| | email campaigns | MAJOR TASKS | | holiday + military holiday;newsletter;dropped/silent Leads;client birthday > simplelaw??? outlook? |
+
+| | fix contact form (joe cannot submit) | MAJOR TASKS | | |
+
+| | Biz category | Questions for emails | | Law Firm ;legal service;Veterans services;legal ;Lawyer |
+
+| | Can Joe access....? | Questions for emails | | bochicchiolaw@gmail.com > intaker pending users;\[pen test\] joe@law4veterans and @DLH >> as username for gmail.com ;bochicchiolaw >> 2fa phone ends in -27.... >> j\*\*@law4veterans.com;bochicchiolaw@gmail.com > google ads admin;law4veterans@gmail.com |
+
+| | Joe Qs: social media usage | Questions for emails | | hashtags approval ;core identity claims;who can we tag in posts |
+
+| | Misc usage, ethics | Questions for emails | | lawyer vs attorney vs law firm;https://www.ncbar.org/2019/07/23/ethical-considerations-for-nc-law-firm-websites/ |
+
+| | PENDING RESPONSE | Questions for emails | | (Joe) no fee "until we win" vs "unless we win" |
+
+| | Qs for Joe | Questions for emails | | is SMS a valid Lead contact method? ... include "text me" option on forms?;"most recent va decision letter" ... do i need to clarify which letter? or clarify multiple is ok?;VA Decision Letter .... vs ratings decision? need an official glossary (SEO shit) ;joe does free consult 100% of the time? ;is the Wix Contact Form simple enough for LCD Leads? ;Is Nextiva your only biz number provider?;Sender identity in chatbots... initial messages from L4V or from Joe ?;please evaluate/correct consent box |
+
+| | VA language, official usage | Questions for emails | "va claims
+
+|
+
+|
+
+|
+
+| va disability 
+
+|
+
+|
+
+|
+
+| va benefits" | VA claims == va disability claims? |
+
+| | When do I ask for Joe's input? | Questions for emails | | asking for input before every step = nothing gets done |
+
+| | \[DB\] FACEBOOK / META RESOURCES | SOCIAL MEDIA | | fb page admin: https://www.facebook.com/professional\_dashboard/overview/;https://www.facebook.com/business/help/support;https://play.google.com/store/apps/developer?id=Meta Platforms, Inc.&hl=en\_US;https://www.facebook.com/help |
+
+| | \[DB\] L4V HASHTAGS (fb, ig) | SOCIAL MEDIA | "CORE TAGS, USE ALWAYS: 
+
+|
+
+|
+
+|
+
+| #VaDisability #VaBenefits #VeteransBenefits #VaAppeal #VaAttorney #VeteransRights #VetAdvocate #DisabledVeterans #VeteransLegal #Law4Veterans #FreeConsultation 
+
+|
+
+|
+
+|
+
+| #JosephMBochicchioPLLC #GoWithJoe #Law4Veterans
+
+|
+
+|
+
+|
+
+| #VAAccredited
+
+|
+
+|
+
+|
+
+| #serviceconnected
+
+|
+
+|
+
+|
+
+| #NoWinNoFee 
+
+|
+
+|
+
+|
+
+| #OnlyIfWeWin 
+
+|
+
+|
+
+|
+
+| #VeteransPayNothingUpfront
+
+|
+
+|
+
+|
+
+| ---------------------------------------
+
+|
+
+|
+
+|
+
+| GPT instructions:
+
+|
+
+|
+
+|
+
+| recompile. remove dupes. camel case. full caps for VA and US. cap at 26 most effective tags. formatted into post-ready with no line breaks. check again the capitalization matched my request. 
+
+|
+
+|
+
+|
+
+| give tag count
+
+|
+
+|
+
+|
+
+| ---------------------------------------
+
+|
+
+|
+
+|
+
+| used on 2025-04-07
+
+|
+
+|
+
+|
+
+| \[#VAClaimsHelp\](https://www.instagram.com/explore/tags/vaclaimshelp/) \[#VADisabilityLawyer\](https://www.instagram.com/explore/tags/vadisabilitylawyer/) \[#VeteransAppeals\](https://www.instagram.com/explore/tags/veteransappeals/) \[#VAReconsideration\](https://www.instagram.com/explore/tags/vareconsideration/) \[#VeteransBenefitsDenied\](https://www.instagram.com/explore/tags/veteransbenefitsdenied/) \[#VeteranSupport\](https://www.instagram.com/explore/tags/veteransupport/) \[#VeteransRights\](https://www.instagram.com/explore/tags/veteransrights/) \[#VeteranJustice\](https://www.instagram.com/explore/tags/veteranjustice/) \[#VeteransMatter\](https://www.instagram.com/explore/tags/veteransmatter/) \[#VeteranLivesMatter\](https://www.instagram.com/explore/tags/veteranlivesmatter/) \[#PTSDAwareness\](https://www.instagram.com/explore/tags/ptsdawareness/) \[#PACTAct\](https://www.instagram.com/explore/tags/pactact/) \[#PACTActClaims\](https://www.instagram.com/explore/tags/pactactclaims/) \[#NCVeterans\](https://www.instagram.com/explore/tags/ncveterans/) \[#NorthCarolinaVeterans\](https://www.instagram.com/explore/tags/northcarolinaveterans/) \[#VeteransInNC\](https://www.instagram.com/explore/tags/veteransinnc/) \[#MilitaryMentalHealth\](https://www.instagram.com/explore/tags/militarymentalhealth/) \[#CombatVeteran\](https://www.instagram.com/explore/tags/combatveteran/) \[#ServiceConnected\](https://www.instagram.com/explore/tags/serviceconnected/) \[#SupportOurVeterans\](https://www.instagram.com/explore/tags/supportourveterans/) \[#VeteransDeserveBetter\](https://www.instagram.com/explore/tags/veteransdeservebetter/) \[#vadisability\](https://www.instagram.com/explore/tags/vadisability/) \[#vadisabilityclaims\](https://www.instagram.com/explore/tags/vadisabilityclaims/) \[#vadisabilitybenefits\](https://www.instagram.com/explore/tags/vadisabilitybenefits/) \[#ServiceConnected\](https://www.instagram.com/explore/tags/serviceconnected/) \[#VeteransDisability\](https://www.instagram.com/explore/tags/veteransdisability/) \[#JosephMBochicchioPLLC\](https://www.instagram.com/explore/tags/josephmbochicchiopllc/) \[#Law4Veterans\](https://www.instagram.com/explore/tags/law4veterans/)
+
+|
+
+|
+
+|
+
+| #UsVeterans #VaDisability #VaAppeal #VaBenefits #VeteransBenefits #VeteransRights #VaAttorney #VaAccredited #MilitaryVeterans #DisabledVeterans #MilitaryLaw #VaHelp #VetLawyer #VetSupport #VetAdvocate #Fight4Benefits #VeteranJustice #DeniedClaims #VaAppeals #VaHelpNow #VeteransLegal #FreeConsultation #JosephMBochicchioPLLC #GoWithJoe #Law4Veterans" | #JosephMBochicchioPLLC #GoWithJoe #Law4Veterans;#serviceconnected |
+
+| | accounts and pages to tag | SOCIAL MEDIA | | wounded warrior project? etc;ask joe |
+
+| | Brian Meta account disaster | SOCIAL MEDIA | | my current fb page login = bbdigital email + bakerb user account. disentangle this;https://www.reddit.com/r/FacebookBusiness/comments/1hagop5/unable\_to\_accept\_business\_invite/;meta account: disallow cross over logins;fb page admin accounts are tied to email address...;personal FB account cannot use Meta Business Suite ;fb page admin: change bbdigital to bakerb;facebook.com/id/hub > official docs > action required > 'no Q's available' loop;INFO: i have never used/installed FB mobile > incomplete 'identity' feature? > limiting my acct? |
+
+| | CAPTIONS | SOCIAL MEDIA | | saved here > https://keep.google.com/u/0/#label/##L4V captions |
+
+| | competitors / inspo | SOCIAL MEDIA | | 1300 folowers - https://www.instagram.com/ptsdlawyers/;4500 folowers - https://www.instagram.com/veteranslegalinstitute/;1200 followers - https://www.instagram.com/woodsandwoods/ |
+
+| | Connect Meta Verified Support | SOCIAL MEDIA | "Brian cannot access Meta Business Suite using his personal login (bakerb4379)
+
+|
+
+|
+
+|
+
+| 🐊: fixed it?!??? enabled all accounts cross-login, then (personal) meta verified. not sure what did it" | |
+
+| | Facebook | SOCIAL MEDIA | | finish the easy-graphic for stella (finished? check email) ;start ads campaign;QR +UTM codes (decide on google analytics tags??) |
+
+| | https://www.youtube.com/@Law4Veterans | SOCIAL MEDIA | | |
+
+| | IG changes | SOCIAL MEDIA | | pfp;l4v business details;removed Jessica's logged-in device (macOS, nov 2022);sanitize follows/ers |
+
+| | Joe bona fides, acolades | SOCIAL MEDIA | | https://portal.ncbar.gov/verification/search.aspx?ID=28244;https://www.va.gov/ogc/apps/accreditation/accredpeopledetail.asp?ID={40E3B201-2C42-4B1A-A19F-6FE3479 |
+
+| | Joe's Meta 2fa (debbie mail) | SOCIAL MEDIA | | email debbie;FAILED: Meta wants notarized document.....;receive > enter code via joe's personal fb account;RECEIVED: BBDIGITAL INBOX FOR CODE |
+
+| | L4v accounts /profiles | SOCIAL MEDIA | | https://x.com/Law4veterans |
+
+| | L4V CORE BRANDING | SOCIAL MEDIA | "Needs approval: 
+
+|
+
+|
+
+|
+
+| 1. No Fee Unless We Win
+
+|
+
+| 2. Free Consultations for All Veterans
+
+|
+
+| 3. Serving Disabled Veterans Nationwide
+
+|
+
+| 4. Helping Veterans Since 2014
+
+|
+
+| 5. We Fight Denied and Under-Awarded Claims
+
+|
+
+| 6. VA-Accredited Representation
+
+|
+
+| 7. Don’t Face the VA Alone… Go With Joe
+
+|
+
+| 8. One-on-One Legal Help for Veterans
+
+|
+
+| 9. We Only Represent Veterans
+
+|
+
+| 10. Your Service Was Honorable — Your Benefits Should Be Too
+
+|
+
+|
+
+|
+
+| \\| # \\| Claim \\| Purpose \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 1 \\| No Fee Unless We Win \\| Builds trust, removes financial barrier \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 2 \\| Free Consultations for All Veterans \\| Lowers entry risk, encourages outreach \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 3 \\| Serving Disabled Veterans Nationwide \\| Clarifies reach and target audience \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 4 \\| Helping Veterans Since 2014 \\| Shows experience and stability \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 5 \\| We Fight Denied and Under-Awarded Claims \\| Highlights service focus \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 6 \\| VA-Accredited Representation \\| Establishes legal credibility \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 7 \\| Don’t Face the VA Alone… Go With Joe \\| Memorable, branded call to action \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 8 \\| One-on-One Legal Help for Veterans \\| Personalized service angle \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 9 \\| We Only Represent Veterans \\| Niche authority and dedication \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| \\| 10 \\| Your Service Was Honorable — Your Benefits Should Be Too \\| Values-driven messaging \\|
+
+|
+
+| \\| --- \\| --- \\| --- \\|
+
+|
+
+|
+
+|
+
+| Joe Approved:" | |
+
+| | L4v phone numbers - public facing | SOCIAL MEDIA | see: \[Planner - audit /update L4V phone numbers\](https://planner.cloud.microsoft/webui/v1/plan/6xDVICJT3EKo6jiDxVDKe2UABg3\_/view/board/task/Q6Z1TfUCUkuNhJ2gkXhSGWUAPKDx?tid=fb77de18-40dc-433d-a36c-9261661dc7fe) | facebook;website;-4044 = Twilio (no access?);\[“real” #s == 704-543-2294 and 704-940-0353\];7045432294 - IG @joe\_vets\_lawyer;nc bar records |
+
+| | May Social Media Post ideas | SOCIAL MEDIA | """The deadline to appeal your VA benefits denial is critical. Missing it could mean losing your right to appeal altogether. If you've received a denial letter, contact us immediately to protect your rights. #VADeadlines #VeteranBenefits #LegalHelp""
+
+|
+
+|
+
+|
+
+| ""BREAKING DOWN BARRIERS: Understanding the VA disability rating system can be confusing. Swipe through this carousel to learn the 5 most common reasons benefits are denied and how we can help overcome them. #VABenefits #VeteranResources #KnowYourRights""
+
+|
+
+|
+
+|
+
+| Did you know? Many veterans receive an initial denial of their VA benefits claim, but that doesn't mean you don't qualify. Our firm has helped hundreds of veterans successfully appeal their denials. Contact us for a free consultation. #VAAppeals #VeteranSupport""" | May 11 is Military Spouse Appreciation Day;Military Appreciation Month |
+
+| | Meta | SOCIAL MEDIA | | reply to open FB tickets;claim fb@law4veterans;verify phone # tied to Joe IG profile > accountscenter.instagram.com/profiles/;UNLOCK INSTAGRAM?!?!?;open help via IG;Get meta verified ;Verify Joe personal identity (mail 2fa from Debbie) ;attach all accts to accountscenter.instagram.com ;open addtl FB help |
+
+| | Meta Ads policy - fb/ig | SOCIAL MEDIA | "can't say ""disability""??  https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes
+
+|
+
+|
+
+|
+
+| https://www.facebook.com/business/help/2557868957763449?id=434838534925385" | |
+
+| | NEED L4V MEDIA FOR... | SOCIAL MEDIA | | Big l4v logo file (1:1 square, 10mb) for Google Biz Profile pic |
+
+| | photo export settings: instagram (+facebook crosspost) | SOCIAL MEDIA | "unverified: 
+
+|
+
+| https://madgicx.com/blog/instagram-post-sizes
+
+|
+
+| https://madgicx.com/blog/facebook-post-size
+
+|
+
+|
+
+|
+
+| https://www.facebook.com/help/instagram/1631821640426723" | IG (1080 x 1350): 4:5 portrait... 1080p width |
+
+| | Upload Media Assets to File Manager on Meta | SOCIAL MEDIA | https://business.facebook.com/asset\_library/business\_creatives/?business\_id=170334460290621 | |
+
+| | where update joe prof pics? | SOCIAL MEDIA | | finish headshots, export finals;outlook;facebook business page;fb personal acct;ig business acct;yelp;gmail?;google business page / acct |
+
+| | youtube | SOCIAL MEDIA | | solution? https://www.youtube.com/watch?v=rMQRqKi4FeQ;(https://www.youtube.com/@Law4Veterans);recover account? ... law4veterans@gmail.com |
+
+| | reasons "why we're different" | TO DO, this week | "\*\*WECARE behaviors\*\*
+
+|
+
+|
+
+|
+
+| - \*\*Welcome\*\*
+
+|
+
+| - \*\*Empathy\*\*
+
+|
+
+| - \*\*Communication\*\*
+
+|
+
+| - \*\*Accountability\*\*
+
+|
+
+| - \*\*Respect\*\*
+
+|
+
+| - \*\*Excellence\*\*" | home grown NC;single lawyer;no AI (limit this claim);case/client selective;VA accredited atty;X hundred vets served;bank, BK attorney;one-on-one, human interaction;zero corporate;20 years of experience;20% fee;no jurisdiction limit;family practice |
+
+| | Docusign renewal - APRIL 22 | TO DO, this week | | review joe's fwd ;review new DS tiers;schedule Docusign demo (Maestro) ;date: TBD |
+
+| | Hire help | TO DO, this week | "eileen - webdev
+
+|
+
+|
+
+|
+
+| katie koenig? analytics" | GOOGLE analytics;IG / FB admin;WEBDEV (wix);IG post creation / management;Katie Todd?;Eileen;Boran;Kate cygan?;Katie Koenig |
+
+| | ian, social media | TO DO, this week | | send assets;add to IG, FB admin;work on twitter, linkedin, ;https://metricool.com/crossposting-instagram-facebook/#Crossposting\_from\_Instagram\_to\_Facebook\_from\_;(Ian) does his account work? ;https://help.instagram.com/192857082456744;ask his content/design ;ian posts to IG > auto-post to FB page |
+
+| | L4v ad campaign calendar | TO DO, this week | | Fed/Mil holidays: instagram, facebook, email, sms??;Bday outreach: email, sms?? |
+
+| | Phone numbers | TO DO, this week | "Debbie Whiting
+
+|
+
+|
+
+|
+
+| \*\*PLEASE DO NOT SEND PICTURES OF DOCUMENTS. \*\*
+
+|
+
+|
+
+|
+
+| Legal Assistant at Joseph M. Bochicchio, PLLC
+
+|
+
+|
+
+|
+
+| Phone 704.543.2294
+
+|
+
+|
+
+|
+
+| Fax 704.543.2296
+
+|
+
+|
+
+|
+
+| Stella Baker
+
+|
+
+|
+
+|
+
+| Case Manager
+
+|
+
+|
+
+|
+
+| Joseph M. Bochicchio, PLLC
+
+|
+
+|
+
+|
+
+| Attorneys
+
+|
+
+|
+
+|
+
+| 3440 Toringdon Way, Ste. #205
+
+|
+
+|
+
+|
+
+| Charlotte, NC  28277
+
+|
+
+|
+
+|
+
+| Office: 704.940.0353, ext.\*\*103\*\*
+
+|
+
+|
+
+|
+
+| Fax: 704.543.2296
+
+|
+
+|
+
+|
+
+| Joseph M. Bochicchio
+
+|
+
+|
+
+|
+
+| Managing Member
+
+|
+
+|
+
+|
+
+| Joseph M. Bochicchio, PLLC
+
+|
+
+|
+
+|
+
+| \[3440 Toringdon Way\](https://na01.safelinks.protection.outlook.com/?url=https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&source=g&amp;data=05|02||ddb5f1ec724b4acdb22d08dd6bb7b375|84df9e7fe9f640afb435aaaaaaaaaaaa|1|0|638785158946501979|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ==|0|||&amp;sdata=TPdYrbUAQm51D2fFMrG/S+dvyetvtv+GftmvPDEHy/8=&amp;reserved=0 ""Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way++Suite+205++Charlotte,+NC++28277?entry=gmail&amp;source=g. Click or tap to follow the link."")
+
+|
+
+|
+
+|
+
+| \[Suite 205\](https://na01.safelinks.protection.outlook.com/?url=https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&source=g&amp;data=05|02||ddb5f1ec724b4acdb22d08dd6bb7b375|84df9e7fe9f640afb435aaaaaaaaaaaa|1|0|638785158946510987|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ==|0|||&amp;sdata=09lySpZASxv803/OzggC5rLfCx1149LsV8mo3yK77Jc=&amp;reserved=0 ""Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way++Suite+205++Charlotte,+NC++28277?entry=gmail&amp;source=g. Click or tap to follow the link."")
+
+|
+
+|
+
+|
+
+| \[Charlotte, NC\](https://na01.safelinks.protection.outlook.com/?url=https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&source=g&amp;data=05|02||ddb5f1ec724b4acdb22d08dd6bb7b375|84df9e7fe9f640afb435aaaaaaaaaaaa|1|0|638785158946521682|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ==|0|||&amp;sdata=XaoHVaew1ODPRmEUA7fK2HpmyGG298z82+EeWSUS4co=&amp;reserved=0 ""Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way++Suite+205++Charlotte,+NC++28277?entry=gmail&amp;source=g. Click or tap to follow the link."") \[28277\](https://na01.safelinks.protection.outlook.com/?url=https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&source=g&amp;data=05|02||ddb5f1ec724b4acdb22d08dd6bb7b375|84df9e7fe9f640afb435aaaaaaaaaaaa|1|0|638785158946531267|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ==|0|||&amp;sdata=LO6+/JQ1moqPJxbwJhkWHti/oVB87uQ1gsDzXtNzd2Y=&amp;reserved=0 ""Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way++Suite+205++Charlotte,+NC++28277?entry=gmail&amp;source=g. Click or tap to follow the link."")
+
+|
+
+|
+
+|
+
+| \[704\](https://na01.safelinks.protection.outlook.com/?url=https://www.google.com/maps/search/3440+Toringdon+Way,+Ste.+%23205+%0D%0A+%0D%0A+Charlotte,+NC+28277+%0D%0A+%0D%0A+Office:+704?entry=gmail&source=g&amp;data=05|02||ddb5f1ec724b4acdb22d08dd6bb7b375|84df9e7fe9f640afb435aaaaaaaaaaaa|1|0|638785158946540998|Unknown|TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ==|0|||&amp;sdata=ndItuYtQua65NJw3myEEY2SaiekO5zbR1qHOq/vd8QQ=&amp;reserved=0 ""Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way,+Ste.+#205+++Charlotte,+NC+28277+++Office:+704?entry=gmail&amp;source=g. Click or tap to follow the link."")-940-0353 x 100 ph.
+
+|
+
+|
+
+|
+
+| 704-543-2296 fax" | research: call rail, nextiva, twilio .. multi-number setup for analytics, campaigns ;brian: reply to Twilio email;Joe's 300-4VET new number? |
+
+| | social media | TO DO, this week | | change PFPs (ig, fb) ;sanitize instagram (followed accounts) |
+
+| | create shared GPT account for \[org\] | upcoming | | alh ? |
+
+| | draft Firm-wide "how to not get hacked" email | upcoming | | password to passphrase ;"unsubscribe";how to examine outlook email header?/detailed sender info (SENDER DOMAIN) |
+
+| | EDIT PICS FOR WEBSITE | upcoming | | SHOOTING PICS w/Sam;g photos - jeep, NC, https://photos.app.goo.gl/APg5pXWnmUGCkcFr9 |
+
+| | Email campaign calendar | upcoming | | mil holidays ;holidays;bdays |
+
+| | OPSEC | upcoming | | outlook inbox search: "unsubscribe";open support ticket: when was rule "antispam" created? > matthewdonchester2023@gmail.com;segregate email addresses.. biz and personal;remember Stella's bitwarden password....;set up bitwarden for Joe and Stella....;Set brian as their bitwarden admin |
+
+| | Stella msft teams license | upcoming | | Awaiting exam instructions from Stella;What else needed for e-exam? |
+
+| | 🧞: Conduct Cybersecurity Audit | upcoming | "ABA stance on Cybersecurity: https://www.americanbar.org/groups/law\_practice/resources/law-technology-today/2024/ensuring-security-protecting-your-law-firm-and-client-data/ 
+
+|
+
+|
+
+|
+
+| GDPR guide for Law Firms: https://www.lawscot.org.uk/media/y1hb5uo4/gdpr-guide-updated-version-2024.pdf" | Create a data breach plan, and disaster recovery plan/ business continuity;Ask Scott if Cybersecurity for the firm is within his scope ;Teach staff about email encryption |
+
+| | "vibe" streaming service commercials | week of RIGHT NOW (!!!)... in active progress | | attach ad pixel(s) to website;fix google tag mgr |
+
+| | Biz card 2025 | week of RIGHT NOW (!!!)... in active progress | | NEW go with joe silhouette logo? ;new address;current phone number... ;QR code + UTM ... to intaker landing page? |
+
+| | Email | week of RIGHT NOW (!!!)... in active progress | | Google tags;Intaker edits.... Help refine the submissions (up lead quality);Determine referral sources (link analytics + ads);WhatsApp ads;Reddit ads;Qr code +utm campaign;Google analytics;L4V Ai dev: competitor research, analyze ads data for keywords, ad copy,;Phone numbers;Interviewing candidates, boran, dony;Google business (+ reviews);Email campaigns (tied to simplelaw crm);Archive old sites, cancel hostgator;TV commercial thing;Further thoughts on Ai;New crm in dev;Ad campaigns... Huge room for improvement;Psych eval referrals;Ai seo??? Have been pivoting to it |
+
+| | Email 2 | week of RIGHT NOW (!!!)... in active progress | | Email rule found;L4v email security, user opsec;Meta verified.. Notarized form required;Meta ads |
+
+| | FIX META BIZ SUITE??? | week of RIGHT NOW (!!!)... in active progress | | attach ad accounts to biz portfolios + assets (both L4v and bbdigital);Separate ig and FB logins (meta accounts panel);Try allowing all cross logins for Brian accounts to access meta biz suite? Try adding individually;Check Joe biz suite admins.... Add both my accounts (bakerb/fb and bbdigital/ig);RESEARCH: meta work account?? Account assigned by admin;Add 2fa sms # to personal acct? |
+
+| | generate QR + UTM | week of RIGHT NOW (!!!)... in active progress | | https://www.wix.com/tools/qr-code-generator;figure out UTM tags > google analytics |
+
+| | instagram, intro triple postsss | week of RIGHT NOW (!!!)... in active progress | post in sets of 3 | r1) open with branding? jeep, dogtag?, logo??;r2) (PIN) about joe, about l4v, why we're different;2) contact info (use ig app);3) l4v generic (use meta app) |
+
+| | intaker v3.0.. landing page setup | week of RIGHT NOW (!!!)... in active progress | | UTM / QR: qr directly to landing page? ;Landing page background == submission instructions;attach to standalone URL (law4veterans.com/lander?) ;TAG MANAGER: update trigger to.... page action? (inspect page log during form submit) ;customize Intaker landing page |
+
+| | Joe Headshots | week of RIGHT NOW (!!!)... in active progress | | final edits (color temp) ;best export settings? |
+
+| | l4v logos | week of RIGHT NOW (!!!)... in active progress | | "go with joe" silhouette update |
+
+| | psych doc search | week of RIGHT NOW (!!!)... in active progress | | MD or PhD ... see joe email for reqs;https://americanmedicalexperts.com/;compile list, send to joe ;(wix form) Alex Rosin, MD ALEXROSIN4@GMAIL.COM https://www.linkedin.com/in/alex-rosin-072ba1321;https://www.reddit.com/r/psychotherapists/comments/1iyu0as/where\_to\_find\_clients/;search web, IG, FB, psych today, linkedin, ... VA website? |
+
+| | Wix Form spam | week of RIGHT NOW (!!!)... in active progress | "site is: law4veterans.com
+
+|
+
+|
+
+|
+
+| form is ""new form"": L4V.com Wix Contact Form
+
+|
+
+|
+
+|
+
+| captcha is: Advanced and reCAPTCHA" | does moving OFF front page help? ... ask support ;captcha is active in settings. does it need to be added as form element?;See help ticket reply: bbdigital inbox |
+
+| | wix mobile - zooming issue | week of RIGHT NOW (!!!)... in active progress | | edit mobile site for 3XXpx wide (look this up)... audit with browser inspection>mobile, not wix prvw;background asset does not move, so.... "prebake" the ~translucent blue onto the background image??;change fonts to 13pt+? - https://forum.wixstudio.com/t/having-a-page-zoom-out-on-mobile/41668/3;reconfigure hamburger menu (remove?) ;https://support.wix.com/en/article/accessibility-about-zoomed-content;decrease font sizes - https://support.wix.com/en/article/mobile-live-site-loads-zoomed-inout-on-andr;buttons link to external URL instead of site location - https://www.reddit.com/r/WIX/comments/tax9t1;hard code viewport - https://www.reddit.com/r/webdev/comments/vp28k8/comment/ieginbe/;MAYBE THIS IS TIED TO WEBSITE "BACKGROUND COLOR" ELEMENTS?? scrolling the page = color layers moving |
+
+| | ad blocker incompatible? | WIX WEBSITE | | website flashes and reloads on my phone (adguard);test intaker bot v2 |
+
+| | Brian notes re: fiverr wix site | WIX WEBSITE | | (review in progress....) ;great menu /banner. especially phone number |
+
+| | Code to auto adjust size | WIX WEBSITE | | https://www.wix.com/blog/responsive-website-design |
+
+| | Finish website | WIX WEBSITE | | INTEGRATIONS: G tag vs tag mgr? ;SEO: meta tags for literally every element, asset filenames (native vs wix?) ;fix mobile layout menus;ASSETS: edit pics, logos;MENUS: mobile and desktop;fix mobile layout zoom issue;https://www.reddit.com/r/WIX/comments/17s9x2y/best\_practices\_uploading\_images\_and\_saving\_records/;apply joe intaker edits;shrink mobile layout elements;fix mobile layout font size;install intaker;INTAKER: request joe audit;MOBILE SITE: fix layout;CONTENT: faqs... ;Update website socials info/icons |
+
+| | Fix mobile layout | WIX WEBSITE | | https://support.wix.com/en/article/wix-editor-troubleshooting-layout-issues-on-your-mobile-site;https://support.wix.com/en/article/site-performance-best-practices |
+
+| | GAds / Wix conversion tracker | WIX WEBSITE | | conversion tracker on form? pages? lander? ;change conversion trigger to... (intaker) Landing page submission URL ;install intaker?;https://support.google.com/google-ads/answer/12215519?sjid=2230791702719779702-NC#zippy=,in-google;SCHEDULE MEETING;abandon Wix forms... replace with Intaker landing page;requires google tag manager |
+
+| | google tag mgr | WIX WEBSITE | | (unless that's a google search console bug?? idr. double check) ;install Vibe pixel (see their support article) ;google tag manager show TWO l4v websites... maybe due to "ghost" header tag html? ;fix google tag manager;https://support.google.com/tagmanager/answer/12329709 |
+
+| | incomplete website SEO? | WIX WEBSITE | "No, not really. - 99% of the time it turns out to be an issue with campaign settings, keyword match types, negatives and how your website caters to a mobile-heavy audience.
+
+|
+
+| - ""poor campaign settings coupled with a below average landing page experience.""
+
+|
+
+| - How is pre-click performance vs. post click. If you have high CTR and intent, I would look at your post click performance.
+
+|
+
+| - You can also potentially look into creating landing pages that are specifically for the Google Ads account." | |
+
+| | L4V DIGITAL ASSET MAP | WIX WEBSITE | | g photos - headshots; proofs, https://photos.app.goo.gl/yCDJkxfoR6G8TLDu8;gdrive - assets for Ian (headshots, logos) ;gdrive - canva exports (socials posts) ;canva - socials posts;g photos - jeep, NC, https://photos.app.goo.gl/APg5pXWnmUGCkcFr9;Headshots draft edit v1 vhttps://photos.app.goo.gl/yCDJkxfoR6G8TLDu8 |
+
+| | Legal disclaimers, policy | WIX WEBSITE | \*This article is not intended to give, and should not be relied upon for, legal advice in any particular circumstance or fact situation. No action should be taken in reliance upon the information contained in this article without obtaining the advice of an attorney.\* | "not legal advice" per page, per FAQ article;any others reqd?;privacy policy?;geo service area (good for SEO and stupids) |
+
+| | media export settings for Wix uploads | WIX WEBSITE | | https://support.wix.com/en/article/site-performance-optimizing-your-media;https://support.wix.com/en/article/wix-media-supported-media-file-types-and-file-sizes;image formatting tool ... https://squoosh.app/;https://support.wix.com/en/article/optimizing-your-images-and-galleries-for-seo-alt-text;https://forum.wixstudio.com/t/is-anyone-already-using-avif-images-on-wix/65121 |
+
+| | NOtes for Website | WIX WEBSITE | "L4V CHECKLIST
+
+|
+
+|
+
+|
+
+| 1)
+
+|
+
+| Download Ratings Decision via the VA website \[View Your Disability Ratings \\| Veterans Affairs\](https://www.va.gov/disability/view-disability-rating/)
+
+|
+
+|
+
+|
+
+| https://www.va.gov/disability/view-disability-rating/
+
+|
+
+|
+
+|
+
+| 2.
+
+|
+
+|
+
+|
+
+| Fax to number:
+
+|
+
+|
+
+|
+
+| Fax: 704.543.2296
+
+|
+
+|
+
+|
+
+| ------
+
+|
+
+|
+
+|
+
+| L4V Prep Guide
+
+|
+
+|
+
+|
+
+| 1.1
+
+|
+
+|
+
+|
+
+| Link for download https://www.va.gov/disability/view-disability-rating/
+
+|
+
+|
+
+|
+
+| 2.
+
+|
+
+| Fax to 704.543.2296
+
+|
+
+| Ask for more help" | |
+
+| | Should we be using landing pages? Are they already in use? | WIX WEBSITE | does this mean there is/was a landing page in use? ... https://web.archive.org/web/20241123111758/https://www.law4veterans.com/lander | |
+
+| | Speed Optimization Analysis | WIX WEBSITE | "https://pagespeed.web.dev/analysis/https-law4veterans-com/9omj87rbxu?form\_factor=mobile
+
+|
+
+|
+
+|
+
+| https://support.wix.com/en/article/site-performance-best-practices" | |
+
+| | terrible mobile UX | WIX WEBSITE | | website zooms in for certain users (android + chrome?) |
+
+| | website sprint | WIX WEBSITE | https://support.wix.com/en/article/wix-forms-choosing-who-gets-notified-about-form-submissions?tabs=Old-Forms | remove wix chat ;install intaker;set joe as reply-to? ;write submission page instructions > /va-claim-consultation;final intaker script edits, profile pic, etc.;------;standalone chat == landing page?? /lander;move contact form off first page and have buttons direct to /contact-us (was /contact-law4veterans?);------;pageload == form submission;-------;joe can reply to Lead by replying to the email (GOOD SHIT) == same as intaker;use as trigger to fire conversion action in troy's G.ADS CAMPAIGN ;change to OLD FORM and activate "email only" notifs ;optimize mobile |
+
+| | Wix Boards | WIX WEBSITE | | ) logos and branding;)) check "asset map" task within this planner for others;) headshots ;can they all go in a single board? then subdivide accordingly ;what is ideal file settings: size, resolution, etc.;write SEO filenames before upload to wix??? or upload naked files, then update in wix?;) large assets, heros, backgrounds (jeep... etc.) |
+
+| | wix FAQ topics | WIX WEBSITE | | how to check VA letters.. https://news.va.gov/116268/view-download-va-decision-letters-online/; va letters explained https://cck-law.com/veterans-law/types-of-va-decision-letters-explained |
+
+| | wix font themes | WIX WEBSITE | | https://support.wix.com/en/article/wix-editor-working-with-text-themes |
+
+| | Wix form (soon intaker chat) - Lead notif email | WIX WEBSITE | "use ""OLD FORM"" for inbox reply-to-Lead fxn
+
+|
+
+|
+
+|
+
+| https://support.wix.com/en/article/wix-forms-choosing-who-gets-notified-about-form-submissions?tabs=Old-Forms" | use "OLD FORM" for inbox reply-to-Lead fxn (ARTICLE ABOVE);Wix email notif: "From: Joe Bochicchio \\| Law4Veterans.com" ... remove Joe B;change pfp to Joe or L4V logo? |
+
+| | wix themes | WIX WEBSITE | | fonts + sizes according to SEO Hierarchy (H1-P3) ... already done? ;colors;have NOT deployed or tested Theme on live site;Theme SHOULD BE live on https://www.law4veterans.com/va-claims-consultation |
+
+| | wix: prep for OUTSOURCE | WIX WEBSITE | "https://support.wix.com/en/article/revamping-your-site-5984263
+
+|
+
+|
+
+|
+
+| https://support.wix.com/en/article/wix-editor-copying-and-pasting-elements-and-pages-to-another-site
+
+|
+
+|
+
+|
+
+| orgwide site files? \[Wix Media: Organizing the Files in Your Media Manager \\| Help Center \\| Wix.com\](https://support.wix.com/en/article/wix-media-organizing-the-files-in-your-media-manager)
+
+|
+
+|
+
+|
+
+| (aka Boards) \[Wix Media: Using Boards in the Media Manager \\| Help Center \\| Wix.com\](https://support.wix.com/en/article/wix-media-using-boards-in-the-media-manager)" | update theme... fonts + sizes, colors;create wix asset Boards (org assets) |
