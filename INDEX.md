@@ -1,6 +1,10 @@
 # link index for L4V repo + planner + docs/useful
 
+## top links
 
+REPO: https://github.com/alh-industries/L4V-orgv1
+
+PROJECT (planner): https://github.com/orgs/alh-industries/projects/1
 
 ## custom fields
 
