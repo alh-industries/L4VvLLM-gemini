@@ -1,4 +1,19 @@
-# devNotes pt3
+# Custom Issue Tags... (Type, Label, Field) 
+
+
+Type: 
+- Bug. subLabels: known solution, unknown solution,...
+- AI
+- SEO
+- devOPS
+- 
+
+Labels: want to see these at-a-glance
+- blocker... ex: "cannot do TASK due to no ADMIN"
+- pending response... waiting for CLIENT response 
+- CLIENT request vs JOE/Stella/Debbie request? ... 
+- CRITICAL TO DO
+- [platform] .. G.Ads, G.TagMgr,...
 
 
 example tag setups 
