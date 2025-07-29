@@ -15,6 +15,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          LABELS: triage 
+          LABELS: triage,LLM,codex
           
 # when opening an Issue in this repo, assign [line 13: labels, project, user]
