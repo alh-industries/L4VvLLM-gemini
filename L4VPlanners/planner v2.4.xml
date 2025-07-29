@@ -1,0 +1,839 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Brian Baker</LastAuthor>
+  <Created>2025-07-27T06:35:42Z</Created>
+  <LastSaved>2025-07-27T06:35:42Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11325</WindowHeight>
+  <WindowWidth>21600</WindowWidth>
+  <WindowTopX>780</WindowTopX>
+  <WindowTopY>2160</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="planner v2.4">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="147" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="15.75">
+   <Column ss:AutoFitWidth="0" ss:Width="339.75"/>
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="141.75"/>
+   <Row>
+    <Cell><Data ss:Type="String">gh issue create -t &quot;$TITLE&quot; -b &quot;$BODY1 + $BODY2 + $BODY3&quot;;</Data></Cell>
+    <Cell><Data ss:Type="String">$TITLE</Data></Cell>
+    <Cell><Data ss:Type="String">$BODY1</Data></Cell>
+    <Cell><Data ss:Type="String">$BODY2</Data></Cell>
+    <Cell><Data ss:Type="String">$BODY3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">DNS Domain auth keys are on Wix</Data></Cell>
+    <Cell><Data ss:Type="String">For Longevity sake</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">get GAds under GA4, all under new marketing platform </Data></Cell>
+    <Cell><Data ss:Type="String">For Longevity sake</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Update dns domain tags with MS, Wix, DS</Data></Cell>
+    <Cell><Data ss:Type="String">For Longevity sake</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ADMIN for g.ads</Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE ANALYTICS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">cannot link to ads acoount without admin rights</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Complete account setup</Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE ANALYTICS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Create a link with Google Ads</Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE ANALYTICS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">edit domain config for tag</Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE ANALYTICS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google ads settings </Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE ANALYTICS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">goals &gt; conversions &gt; summary &gt; settings &gt; google analytics property ;conversion id, destination id - AW-11030537154</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google ads TO DO </Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE ANALYTICS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">law4veterans.com/#burn;check Troy's ads for URLs;tags support says: change conversion goals away from default &amp; point at website instead of e.g. UA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Brian owned</Data></Cell>
+    <Cell><Data ss:Type="String">google conversion tags</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">L4V tag mgr container - GTM-54HN8L4T ;G-0HGTJKFYN0... wix google tag integration;Law4Veterans Google Tag Mgr - 629 129 990 6;L4V GAnanlytics Account - 346 616 544</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google analytics, old setup </Data></Cell>
+    <Cell><Data ss:Type="String">google conversion tags</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">conversion ID 11030537154... found in G.ads &gt; goals &gt; campaign action settings &gt; tag options  ;Troy owns google ads account;OLDER &gt; &quot;Law4Veterans.com. Joseph M. Bochicchio, PLLC (UA-249921957-17)&quot;;??? owns google analytics property &quot;Law4Veterans.com. Joseph M. Bochicchio, PLLC - GA4 (401830982)&quot;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google tag mgr</Data></Cell>
+    <Cell><Data ss:Type="String">google conversion tags</Data></Cell>
+    <Cell><Data ss:Type="String">1. Use Google Tag Manager to [install the Google Ads conversion tracking tag](https://support.google.com/tagmanager/answer/6105160?hl=en_US). You’ll need to provide the following information for your **Website Contact Form** conversion action:&#13;&#13;&#10;        &#13;&#13;&#10;          Conversion ID&#13;&#13;&#13;&#10;&#13;&#13;&#10;          11030537154&#13;&#13;&#13;&#10;&#13;&#13;&#10;          Conversion label&#13;&#13;&#13;&#10;&#13;&#13;&#10;          tocRCJ3awdkZEMLH4osp</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">to do </Data></Cell>
+    <Cell><Data ss:Type="String">google conversion tags</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">REQUIRES: ads campaign admin access;edit individual campaign's settings for analytics referrals (tag settings) ;determine which campaigns troy wants linked to what website actions</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">TROY DO THIS SHIT - google ads</Data></Cell>
+    <Cell><Data ss:Type="String">google conversion tags</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Conversion Action ... Set conversion value ??;TRACKING TEMPLATE to BLANK???;GIVE ADMIN?: cannot link to g.analytics account;enable parallel tracking;account setting &gt; lead  form ads terms NOT accepted</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Intaker = poor mobile experience?</Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">intaker install &gt; wix site</Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell><Data ss:Type="String">intaker custom HTML https://dashboard.intaker.com/bots/publish .... and domain rules??</Data></Cell>
+    <Cell><Data ss:Type="String">2) or use domain rules (/bots/publish) ??? ... not sure if code injection still required;1) inject header code into Wix ... https://dashboard.intaker.com/bots/publish ;remove wix chat, GOOD RIDDANCE MFFFFFFFF;audit / fix intaker+wix mobile website;use Intaker HTML button code?? ... sucked ass when I tried last</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">intaker Qs for Joe</Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">assign Leads within Intaker?  (&gt; research Docusign integration) ;spam prevention? = 2fa sms to submit again;or Joe simply fwd Intaker email regardless?;use intaker phonecall button or intaker phone service? ;live-call connect? intaker instantly dials Firm upon Lead phone # submission;do we need Firm users saved in Intaker? Stella, Debbie, etc. </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Joe's INTAKER reqs</Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell><Data ss:Type="String">&quot;Maybe we make it:&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;1. Do you have a Veteran’s disability claim?&#13;&#13;&#13;&#10;2. Was the Ratings Decision within the last year?&#13;&#13;&#13;&#10;3. Would you like to schedule a free consultation?  If ‘yes’…then&#13;&#13;&#13;&#10;4. Type in your name, email, and phone number&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">[&#128010; wanted Lead as reply-to, so Joe decides email contact... use pass-thru inbox, solve 2x probs];LEAD'S EMAIL &gt; how to get/send decision letter;Feb17: consultations@, bcc debbie, stella, joe;[&#128010; Intaker Lead info fields is set at the chatbot level, for all chat flows;&quot;don’t care if we use Wix or Intaker ultimately… I just want it all to work&quot;;FAQ on the chatbot;edit any &quot;free consultation with *joe*&quot; ,, stella/debbie also do consults;&quot;WIX dashboard is more difficult to use, and we were having trouble getting fill in forms&quot;;&quot;use Intaker for leads, and WIX for mobile website leads?&quot;;&quot;I agree that if [chatbot mssg is] coming to me, they are only communicating with a lawyer&quot;;put debbie@ for RD recipient;LEAD's EMAIL &gt;&gt; “please send us a copy of the RD”…. where would they send it to? ;CHANGE &gt;&gt;  &quot;can i help you?&quot; popup = lawyers initiating contact = unethical   ;set LEAD EMAIL reply-to = joe@l4v ... Lead can send RD via replying to email ;personalize &quot;chatbot&quot; icons with Joe's pic, name &gt;&gt; edit chat copy to first person? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4V v3.0 chatbot - intaker high level TO DO </Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell><Data ss:Type="String">L4V v3.0 landing page:&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://www.intaker.com/law4veterans/L4Vv3.0</Data></Cell>
+    <Cell><Data ss:Type="String">add instructions re: how Leads submit Letters... email, scan,....?? ;&quot;Text us widget&quot; ... joe says &quot;sure, just not my cell. do later;BOT (v3.0), WORKING VERSION &gt;&gt;&gt;  https://www.intaker.com/law4veterans/L4Vv3.0;&quot;contacts widgets&quot; ... unknown. likely cannot claim current L4V 1-866-num from Twilio ;remove ALL emojis (default responses) ;edit popup text in &quot;mini widget&quot; and &quot;pop up&quot; &gt; worded so we aren't initiating contact;future research: sequences, workflows, integrations, analytics, Leads (2022-2025)  .... ;&#45;&#45;-;INSTALL ON WEBSITE, replace wix chat;complete &quot;landing page&quot; ... low priority. pic? colors?...  link to Ads/tag mgr eventually;future tasks: update Organization profile;apply remaining joe edits??? shared reply-to inbox? etc. </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">LATER /intaker side projects</Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell><Data ss:Type="String">- intaker AI qualifier&#160; (+integrations)&#160;.... &#13;&#13;&#10;&#13;&#13;&#10;AI-sort Leads with LLM vomit &gt; calendar integration &gt; auto-sched consult ...&#160;MUTE &gt;&gt;&#160;https://intaker.azureedge.net/new-dashboard/video/Qualifiers.mp4&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;- integrations&#160;https://dashboard.intaker.com/integration/list</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">&#128010; NOTES: intaker readme</Data></Cell>
+    <Cell><Data ss:Type="String">INTAKER INTALL 2K25 HAPPY EASTER </Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">settings menus have no logic == look thru every setting to change any one thing,  lol . . . ;must request &quot;script&quot; changes via support (email);open every drop-down for &quot;advanced settings&quot; == most of the bot features ;working version is &quot;L4V v3.0&quot;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Competitor</Data></Cell>
+    <Cell><Data ss:Type="String">Isa</Data></Cell>
+    <Cell><Data ss:Type="String">https://ptsdlawyers.com/board-of-veterans-appeals/</Data></Cell>
+    <Cell><Data ss:Type="String">https://ptsdlawyers.com/board-of-veterans-appeals/</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Schema guideline to improve SEO</Data></Cell>
+    <Cell><Data ss:Type="String">Isa</Data></Cell>
+    <Cell><Data ss:Type="String">Step 2 shows how to create Schema and include LIST codes to improve search results&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://www.legaltechdesign.com/2021/05/tag-your-law-how-can-i-use-the-list-taxonomy-on-my-legal-tech-project/</Data></Cell>
+    <Cell><Data ss:Type="String">Brian says: actually writing seo tags, etc., must happen before improvement planning.;Excellent resource is Yoast (check for wix plugin?);Probably excellent resource is Wix seo checklist/wizard</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">JOE BRANDING REQUESTS </Data></Cell>
+    <Cell><Data ss:Type="String">JOE'S REQs &amp; REQs [REQUESTS+REQUIREMENTS]</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">love original american flag + dogtag logo ;love &quot;go with joe&quot; logo &gt; change graphic to joe's silhouette &gt; headshot + photoshop &gt; indesign? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Joe requests</Data></Cell>
+    <Cell><Data ss:Type="String">JOE'S REQs &amp; REQs [REQUESTS+REQUIREMENTS]</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">remove dates from google reviews?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">refresh L4v /Joe logos</Data></Cell>
+    <Cell><Data ss:Type="String">JOE'S REQs &amp; REQs [REQUESTS+REQUIREMENTS]</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">re-do silhouette logo using joe's outline;&quot;.com&quot;  logo ending?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">[DB] BRAND COLORS ... hexcolors, etc.</Data></Cell>
+    <Cell><Data ss:Type="String">L4v &quot;databases&quot; [DB] </Data></Cell>
+    <Cell><Data ss:Type="String">https://colordesigner.io/compare-colors</Data></Cell>
+    <Cell><Data ss:Type="String">Intaker OG (bold blue): 498fe1;Canva 1 (LT blue):  7dc1ff;Canva 2 (DK blue): 6995b5 </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">create L4V roles/users/aliases (m365)</Data></Cell>
+    <Cell><Data ss:Type="String">L4v &quot;databases&quot; [DB] </Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">shared docusign inbox?;create report / spreadsheet (copilot?);marketing@;admin@</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">database for L4V usage rules, technicals, ethics</Data></Cell>
+    <Cell><Data ss:Type="String">L4v &quot;databases&quot; [DB] </Data></Cell>
+    <Cell><Data ss:Type="String">official biz entities&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;dba?&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;joe's stance on mkting claims</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;established&quot; dates;Biz entities: jmb pllc;accolades, bona fides;DBA?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">database ideas</Data></Cell>
+    <Cell><Data ss:Type="String">L4v &quot;databases&quot; [DB] </Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">points of contact (phones, emails);licenses, memberships, bonafides;hashtags;(disentangle DLH~L4V);review website profiles - google biz, avvo, trust pilot, etc;competitors/inspo;ad copy usage rules;accolades;digital asset map (photos, logos, media packet,);social media profiles </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4V CASE HISTORY</Data></Cell>
+    <Cell><Data ss:Type="String">L4v &quot;databases&quot; [DB] </Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">spreadsheet: client, date of contact/appeal/ruling, injury/claim, geo locale, $award (+fee);Generate using copilot + prevail files?;SEE JOE's SPREADSHEET (in bbdigital email) - (2022-24?)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Legal Taxonomy resource for VA terms</Data></Cell>
+    <Cell><Data ss:Type="String">L4v &quot;databases&quot; [DB] </Data></Cell>
+    <Cell><Data ss:Type="String">https://taxonomy.legal/terms/VE-00-00-00-00/veterans-and-military</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">??????? wix</Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">how the fuck do containers work;customize org links / assets / socials icons??</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">custom &quot;socials bar&quot; </Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell><Data ss:Type="String">createflat monocolor icons for: review sites, accreditation, accolades, etc&#160;&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;put them in the footer... == google reviews on every page</Data></Cell>
+    <Cell><Data ss:Type="String">google reviews/business;avvo?;linked in;put them in the footer... == google reviews on every page</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">FAQ page </Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">can dynamic collection display like i want;dynamic collection FAQ in place of blog?  SEO implications?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">RESEARCH</Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://dev.wix.com/docs/develop-websites/articles/workspace-tools/developer-tools/triggered-emails/;triggered emails vs wix automations. same thing?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">research stubs</Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell><Data ss:Type="String">accept doc uploads via wix site?: https://www.reddit.com/r/WIX/comments/17s9x2y/best_practices_uploading_images_and_saving_records/</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">RESEARCH: website Badges?? shit to join???</Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://www.nclawspecialists.gov/for-lawyers/for-certified-specialists/media-kit/;https://www.nclamp.gov/;https://www.americanbar.org/groups/specialization/organizations-with-aba-accredited-lawyer-certifica;https://www.nclamp.gov/for-military-personnel-family/finding-a-lawyer/;https://www.ncbar.gov/media/730802/legal-resource-finder.jpg</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">scrape archived L4V sites (wayback machine)</Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell><Data ss:Type="String">https://web.archive.org/web/20250000000000*/https://www.law4veterans.com/</Data></Cell>
+    <Cell><Data ss:Type="String">audit additional pages, URLs;determine useful website versions and their dates;save URL of each;(ChatGPT) old copy + SEO keyword analysis = new copy ;scrape copy and save to... OneNote?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Search Console link to backlinks</Data></Cell>
+    <Cell><Data ss:Type="String">l4v website, low priority</Data></Cell>
+    <Cell><Data ss:Type="String">https://search.google.com/search-console/links?resource_id=sc-domain%3Alaw4veterans.com</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">audit SEO of old websites</Data></Cell>
+    <Cell><Data ss:Type="String">L4V x Wayback Archive</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">anchor links;copy content, as pertaining to SEO ;URL slugs;SEO tags? ;previous homepage was stuffed with SEO and anchor links</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Jessica's website</Data></Cell>
+    <Cell><Data ss:Type="String">L4V x Wayback Archive</Data></Cell>
+    <Cell><Data ss:Type="String">[Sep 15, 2022 - Aug 20, 2024] https://web.archive.org/web/20240820140802/https://www.law4veterans.com/</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Landing page??</Data></Cell>
+    <Cell><Data ss:Type="String">L4V x Wayback Archive</Data></Cell>
+    <Cell><Data ss:Type="String">[Nov 23, 2024] https://web.archive.org/web/20241123111758/https://www.law4veterans.com/lander</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">law4veterans.com/#burn</Data></Cell>
+    <Cell><Data ss:Type="String">L4V x Wayback Archive</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">[INSERT ARCHIVE LINK]</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">scrape copy from old websites</Data></Cell>
+    <Cell><Data ss:Type="String">L4V x Wayback Archive</Data></Cell>
+    <Cell><Data ss:Type="String">Copy of important website copy,&#160; in a usable, easy to access way.&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Prompt gpt to rip copy from wayback machine&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Later: sundown HostGator and GoDaddy</Data></Cell>
+    <Cell><Data ss:Type="String">wayback &gt; site map;new copy = old copy + SEO keywords ;scrape w/GPT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Troy's website</Data></Cell>
+    <Cell><Data ss:Type="String">L4V x Wayback Archive</Data></Cell>
+    <Cell><Data ss:Type="String">1 [???- 2019] https://web.archive.org/web/20190202092700/https://law4veterans.com/&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;2 [Nov 2020 - March 12, 2022] https://web.archive.org/web/20220312062549/https://www.law4veterans.com/&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;3 [May 27, 2022 - July 12, 2022] https://web.archive.org/web/20220712172305/https://www.law4veterans.com/https://web.archive.org/web/20220712172305/https://www.law4veterans.com/</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">clean up L4V canva folders, permissions</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">price check Canva;separate all from guga's account?;any good alts? don't think so </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">clean up L4V/DLH msft project files</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">delete Planner stubs, archive old;start in Sharepoint? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">dba/trade name</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell><Data ss:Type="String">https://ncleg.gov/Laws/GeneralStatuteSections/Chapter55D</Data></Cell>
+    <Cell><Data ss:Type="String">NC Bar does not care;https://www.ncbar.gov/for-lawyers/ethics/adopted-opinions/2005-formal-ethics-opinion-8/;must register DBA in at least 1 county ;trademark search https://tmsearch.uspto.gov/search/search-information;nc dba form: https://edpnc.com/wp-content/uploads/2024/03/A-Assumed-Business-Name-Certificate-1.pdf;meck county dba: https://meckrod.manatron.com/localization/asninfo.htm</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google analytics</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">UTM ;configure site tags: analytics&gt;L4V account&gt;property settings&gt;data streams</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google partner????? FK troy</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://enterprisemarketingportal.google/become-a-partner</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google search console</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">1: added L4v domain via search console panel ;TWO properties?? ;https://www.wix.com/seo/learn/resource/wix-site-inspection-tool;reddit says: check html header for old tag data;2: added google tag via wix marketing integrations</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4V branding kits</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">fonts, styles, colors;wix;adobe;canva</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4V Email blue check (in Gmail) </Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">BIMI? https://support.google.com/a/answer/10911028?dark=1&amp;sjid=17664652614073739543-NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">SEO</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://www.reddit.com/r/SEO/comments/hrcbv9/wix_seo_issues/;https://www.reddit.com/r/WixHelp/comments/18oazro/meta_descripton_business_what_am_i_missing/;https://www.wix.com/seo/learn/resource/what-is-google-search-console#viewer-5ybih31321</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Simple Law renewal???</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">when?;August;Ditch simple law? Lol</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">stella docusign email notifs</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">stella@law4veterans.com seems to be a default recipient in the notification flow;CAN STELLA JUST HIT &quot;UNSUBSCRIBE&quot; LINK ???? (mostly no);debbie@, stella@ both trigger email to stella@ when they send envelope to client;unclear if joe@ also triggers;evaluate fix;what does &quot;report email&quot; hyperlink do? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">web vs desktop apps</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">canva;misc meta business shits</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">wix certs</Data></Cell>
+    <Cell><Data ss:Type="String">low priority</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://www.wix.com/learn/certification/accessibility;https://www.wix.com/studio/academy/web-designer-certification-criteria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">[DB] BRANDING PACKET /LIBRARY </Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">logos;colors: ;wordmark </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">[DB] LIST OF PHONE NUMBERS </Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;real&quot; numbers 704-543-2294 and 704-940-0353</Data></Cell>
+    <Cell><Data ss:Type="String">704-318-4777 - https://www.instagram.com/p/ChKYdh0Or8D/;(704-940-0353 - Troy's default);(704-543-2294) ;intaker &gt; settings &gt; &quot;intaker phone number&quot;  (704) 389-9901 ... fwds to (704) 940-0353</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">audit /update L4V phone numbers</Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell><Data ss:Type="String">List of phone numbers as listed in OneNote:&#160;Phone numbers&#160; ([Web view](https://belagenie.sharepoint.com/sites/L4V/_layouts/OneNote.aspx?id=%2Fsites%2FL4V%2FSiteAssets%2FLaw4Veterans%20x%20ALH%20x%20Sharepoint&amp;amp;wd=target%28L4V%20&#45;-%20TO%20DO.one%7C9EF84E29-BDFB-4057-A174-B3FEC91AD67D%2FPhone%20numbers%7C96E285E8-53E2-4773-8505-FBB05B29509E%2F%29))&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;704-940-0353	&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://www.800forall.com/SearchWhoOwns.aspx&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;&quot;Law for Vets&quot; = 529-367-8377&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;(704) 940-0353[Joseph M. Bochicchio, PLLC | BBB Business Profile | Better Business Bureau](https://www.bbb.org/us/nc/charlotte/profile/bankruptcy-attorney/joseph-m-bochicchio-pllc-0473-235726/)</Data></Cell>
+    <Cell><Data ss:Type="String">trace numbers to campaigns (/platforms?);wait for Troy's report (email) ;Troy: defaulting 704-940-0353 (joe says &quot;that's one of my actual land line numbers&quot;);(product) research &gt; phone # generator +analytics ;see @isa notes for #s;bbb.org: (704) 940-0353;Troy : all L4v-800 numbers untrackable;DATABASE: L4v #s, attached channel,;attach (unique?) #s to every profile &gt; IG, FB, website, ads </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">brianbakerdigital did NOT receive Form completion notification</Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">choose: Wix chat vs Intaker</Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">email campaigns</Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">holiday + military holiday;newsletter;dropped/silent Leads;client birthday &gt; simplelaw??? outlook?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">fix contact form (joe cannot submit) </Data></Cell>
+    <Cell><Data ss:Type="String">MAJOR TASKS</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Biz category</Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Law Firm ;legal service;Veterans services;legal ;Lawyer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Can Joe access....?</Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">bochicchiolaw@gmail.com &gt; intaker pending users;[pen test] joe@law4veterans and @DLH &gt;&gt; as username for gmail.com ;bochicchiolaw &gt;&gt; 2fa phone ends in -27.... &gt;&gt; j**@law4veterans.com;bochicchiolaw@gmail.com &gt; google ads admin;law4veterans@gmail.com</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Joe Qs: social media usage</Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">hashtags approval ;core identity claims;who can we tag in posts </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Misc usage, ethics</Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">lawyer vs attorney vs law firm;https://www.ncbar.org/2019/07/23/ethical-considerations-for-nc-law-firm-websites/</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">PENDING RESPONSE</Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">(Joe) no fee &quot;until we win&quot; vs &quot;unless we win&quot;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Qs for Joe </Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">is SMS a valid Lead contact method? ... include &quot;text me&quot; option on forms?;&quot;most recent va decision letter&quot; ... do i need to clarify which letter? or clarify multiple is ok?;VA Decision Letter .... vs ratings decision? need an official glossary (SEO shit) ;joe does free consult 100% of the time? ;is the Wix Contact Form simple enough for LCD Leads? ;Is Nextiva your only biz number provider?;Sender identity in chatbots... initial messages from L4V or from Joe ?;please evaluate/correct consent box</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">VA language, official usage</Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell><Data ss:Type="String">va claims&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;va disability&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;va benefits</Data></Cell>
+    <Cell><Data ss:Type="String">VA claims == va disability claims?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">When do I ask for Joe's input? </Data></Cell>
+    <Cell><Data ss:Type="String">Questions for emails</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">asking for input before every step = nothing gets done</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">[DB] FACEBOOK / META RESOURCES</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">fb page admin: https://www.facebook.com/professional_dashboard/overview/;https://www.facebook.com/business/help/support;https://play.google.com/store/apps/developer?id=Meta%20Platforms%2C%20Inc.&amp;hl=en_US;https://www.facebook.com/help</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">[DB] L4V HASHTAGS (fb, ig) </Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">CORE TAGS, USE ALWAYS:&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#VaDisability #VaBenefits #VeteransBenefits #VaAppeal #VaAttorney #VeteransRights #VetAdvocate #DisabledVeterans #VeteransLegal #Law4Veterans #FreeConsultation&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#JosephMBochicchioPLLC #GoWithJoe #Law4Veterans&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#VAAccredited&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#serviceconnected&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#NoWinNoFee&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#OnlyIfWeWin&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#VeteransPayNothingUpfront&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;GPT instructions:&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;recompile. remove dupes. camel case. full caps for VA and US. cap at 26 most effective tags.&#160;formatted into post-ready with no line breaks. check again the capitalization matched my request.&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;give tag count&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;used on 2025-04-07&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;[#VAClaimsHelp](https://www.instagram.com/explore/tags/vaclaimshelp/) [#VADisabilityLawyer](https://www.instagram.com/explore/tags/vadisabilitylawyer/) [#VeteransAppeals](https://www.instagram.com/explore/tags/veteransappeals/) [#VAReconsideration](https://www.instagram.com/explore/tags/vareconsideration/) [#VeteransBenefitsDenied](https://www.instagram.com/explore/tags/veteransbenefitsdenied/) [#VeteranSupport](https://www.instagram.com/explore/tags/veteransupport/) [#VeteransRights](https://www.instagram.com/explore/tags/veteransrights/) [#VeteranJustice](https://www.instagram.com/explore/tags/veteranjustice/) [#VeteransMatter](https://www.instagram.com/explore/tags/veteransmatter/) [#VeteranLivesMatter](https://www.instagram.com/explore/tags/veteranlivesmatter/) [#PTSDAwareness](https://www.instagram.com/explore/tags/ptsdawareness/) [#PACTAct](https://www.instagram.com/explore/tags/pactact/) [#PACTActClaims](https://www.instagram.com/explore/tags/pactactclaims/) [#NCVeterans](https://www.instagram.com/explore/tags/ncveterans/) [#NorthCarolinaVeterans](https://www.instagram.com/explore/tags/northcarolinaveterans/) [#VeteransInNC](https://www.instagram.com/explore/tags/veteransinnc/) [#MilitaryMentalHealth](https://www.instagram.com/explore/tags/militarymentalhealth/) [#CombatVeteran](https://www.instagram.com/explore/tags/combatveteran/) [#ServiceConnected](https://www.instagram.com/explore/tags/serviceconnected/) [#SupportOurVeterans](https://www.instagram.com/explore/tags/supportourveterans/) [#VeteransDeserveBetter](https://www.instagram.com/explore/tags/veteransdeservebetter/) [#vadisability](https://www.instagram.com/explore/tags/vadisability/) [#vadisabilityclaims](https://www.instagram.com/explore/tags/vadisabilityclaims/) [#vadisabilitybenefits](https://www.instagram.com/explore/tags/vadisabilitybenefits/) [#ServiceConnected](https://www.instagram.com/explore/tags/serviceconnected/) [#VeteransDisability](https://www.instagram.com/explore/tags/veteransdisability/) [#JosephMBochicchioPLLC](https://www.instagram.com/explore/tags/josephmbochicchiopllc/) [#Law4Veterans](https://www.instagram.com/explore/tags/law4veterans/)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;#UsVeterans #VaDisability #VaAppeal #VaBenefits #VeteransBenefits #VeteransRights #VaAttorney #VaAccredited #MilitaryVeterans #DisabledVeterans #MilitaryLaw #VaHelp #VetLawyer #VetSupport #VetAdvocate #Fight4Benefits #VeteranJustice #DeniedClaims #VaAppeals #VaHelpNow #VeteransLegal #FreeConsultation&#160;#JosephMBochicchioPLLC #GoWithJoe #Law4Veterans</Data></Cell>
+    <Cell><Data ss:Type="String">#JosephMBochicchioPLLC #GoWithJoe #Law4Veterans;#serviceconnected</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">accounts and pages to tag</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">wounded warrior project? etc;ask joe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Brian Meta account disaster</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">my current fb page login = bbdigital email + bakerb user account. disentangle this;https://www.reddit.com/r/FacebookBusiness/comments/1hagop5/unable_to_accept_business_invite/;meta account: disallow cross over logins;fb page admin accounts are tied to email address...;personal FB account cannot use Meta Business Suite ;fb page admin: change bbdigital to bakerb;facebook.com/id/hub &gt; official docs &gt; action required &gt; 'no Q's available' loop;INFO: i have never used/installed FB mobile &gt; incomplete 'identity' feature? &gt; limiting my acct?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">CAPTIONS</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">saved here &gt; https://keep.google.com/u/0/#label/%23%23L4V%20captions</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">competitors / inspo</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">1300 folowers - https://www.instagram.com/ptsdlawyers/;4500 folowers - https://www.instagram.com/veteranslegalinstitute/;1200 followers - https://www.instagram.com/woodsandwoods/</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Connect Meta Verified Support </Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">Brian cannot access Meta Business Suite using his personal login (bakerb4379)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;&#128010;: fixed it?!??? enabled all accounts cross-login, then (personal) meta verified. not sure what did it</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Facebook </Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">finish the easy-graphic for stella (finished? check email) ;start ads campaign;QR +UTM codes (decide on google analytics tags??) </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">https://www.youtube.com/@Law4Veterans</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">IG changes</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">pfp;l4v business details;removed Jessica's logged-in device (macOS, nov 2022);sanitize follows/ers</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Joe bona fides, acolades</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://portal.ncbar.gov/verification/search.aspx?ID=28244;https://www.va.gov/ogc/apps/accreditation/accredpeopledetail.asp?ID={40E3B201-2C42-4B1A-A19F-6FE3479</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Joe's Meta 2fa (debbie mail)</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">email debbie;FAILED: Meta wants notarized document.....;receive &gt; enter code via joe's personal fb account;RECEIVED: BBDIGITAL INBOX FOR CODE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4v accounts /profiles</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://x.com/Law4veterans</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4V CORE BRANDING</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">Needs approval:&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;1. No Fee Unless We Win&#13;&#13;&#13;&#10;2. Free Consultations for All Veterans&#13;&#13;&#13;&#10;3. Serving Disabled Veterans Nationwide&#13;&#13;&#13;&#10;4. Helping Veterans Since 2014&#13;&#13;&#13;&#10;5. We Fight Denied and Under-Awarded Claims&#13;&#13;&#13;&#10;6. VA-Accredited Representation&#13;&#13;&#13;&#10;7. Don’t Face the VA Alone… Go With Joe&#13;&#13;&#13;&#10;8. One-on-One Legal Help for Veterans&#13;&#13;&#13;&#10;9. We Only Represent Veterans&#13;&#13;&#13;&#10;10. Your Service Was Honorable — Your Benefits Should Be Too&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| # | Claim | Purpose |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 1 | No Fee Unless We Win | Builds trust, removes financial barrier |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 2 | Free Consultations for All Veterans | Lowers entry risk, encourages outreach |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 3 | Serving Disabled Veterans Nationwide | Clarifies reach and target audience |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 4 | Helping Veterans Since 2014 | Shows experience and stability |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 5 | We Fight Denied and Under-Awarded Claims | Highlights service focus |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 6 | VA-Accredited Representation | Establishes legal credibility |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 7 | Don’t Face the VA Alone… Go With Joe | Memorable, branded call to action |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 8 | One-on-One Legal Help for Veterans | Personalized service angle |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 9 | We Only Represent Veterans | Niche authority and dedication |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;| 10 | Your Service Was Honorable — Your Benefits Should Be Too | Values-driven messaging |&#13;&#13;&#13;&#10;| &#45;&#45;- | &#45;&#45;- | &#45;&#45;- |&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Joe Approved:</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4v phone numbers - public facing</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">see:&#160;[Planner - audit /update L4V phone numbers](https://planner.cloud.microsoft/webui/v1/plan/6xDVICJT3EKo6jiDxVDKe2UABg3_/view/board/task/Q6Z1TfUCUkuNhJ2gkXhSGWUAPKDx?tid=fb77de18-40dc-433d-a36c-9261661dc7fe)</Data></Cell>
+    <Cell><Data ss:Type="String">facebook;website;-4044 = Twilio (no access?);[“real” #s == 704-543-2294 and 704-940-0353];7045432294 - IG @joe_vets_lawyer;nc bar records</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">May Social Media Post ideas</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;The deadline to appeal your VA benefits denial is critical. Missing it could mean losing your right to appeal altogether. If you've received a denial letter, contact us immediately to protect your rights. #VADeadlines #VeteranBenefits #LegalHelp&quot;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;&quot;BREAKING DOWN BARRIERS: Understanding the VA disability rating system can be confusing. Swipe through this carousel to learn the 5 most common reasons benefits are denied and how we can help overcome them. #VABenefits #VeteranResources #KnowYourRights&quot;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Did you know? Many veterans receive an initial denial of their VA benefits claim, but that doesn't mean you don't qualify. Our firm has helped hundreds of veterans successfully appeal their denials. Contact us for a free consultation. #VAAppeals #VeteranSupport&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">May 11 is Military Spouse Appreciation Day;Military Appreciation Month </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Meta</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">reply to open FB tickets;claim fb@law4veterans;verify phone # tied to Joe IG profile &gt; accountscenter.instagram.com/profiles/;UNLOCK INSTAGRAM?!?!?;open help via IG;Get meta verified ;Verify Joe personal identity (mail 2fa from Debbie) ;attach all accts to accountscenter.instagram.com  ;open addtl FB help</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Meta Ads policy - fb/ig</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">can't say &quot;disability&quot;??&#160;&#160;https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://www.facebook.com/business/help/2557868957763449?id=434838534925385</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">NEED L4V MEDIA FOR...</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Big l4v logo file (1:1 square, 10mb) for Google Biz Profile pic</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">photo export settings:  instagram (+facebook crosspost)</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">unverified:&#160;&#13;&#13;&#13;&#10;https://madgicx.com/blog/instagram-post-sizes&#13;&#13;&#13;&#10;https://madgicx.com/blog/facebook-post-size&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://www.facebook.com/help/instagram/1631821640426723</Data></Cell>
+    <Cell><Data ss:Type="String">IG (1080 x 1350):  4:5 portrait... 1080p width</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Upload Media Assets to File Manager on Meta</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">https://business.facebook.com/asset_library/business_creatives/?business_id=170334460290621</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">where update joe prof pics?</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">finish headshots, export finals;outlook;facebook business page;fb personal acct;ig business acct;yelp;gmail?;google business page / acct</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">youtube</Data></Cell>
+    <Cell><Data ss:Type="String">SOCIAL MEDIA</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">solution? https://www.youtube.com/watch?v=rMQRqKi4FeQ;(https://www.youtube.com/@Law4Veterans);recover account? ... law4veterans@gmail.com</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String"> reasons &quot;why we're different&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell><Data ss:Type="String">**WECARE behaviors**&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;- **Welcome**&#13;&#13;&#13;&#10;- **Empathy**&#13;&#13;&#13;&#10;- **Communication**&#13;&#13;&#13;&#10;- **Accountability**&#13;&#13;&#13;&#10;- **Respect**&#13;&#13;&#13;&#10;- **Excellence**</Data></Cell>
+    <Cell><Data ss:Type="String">home grown NC;single lawyer;no AI (limit this claim);case/client selective;VA accredited atty;X hundred vets served;bank, BK attorney;one-on-one, human interaction;zero corporate;20 years of experience;20% fee;no jurisdiction limit;family practice</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Docusign renewal - APRIL 22</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">review joe's fwd ;review new DS tiers;schedule Docusign demo (Maestro)  ;date: TBD</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Hire help</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell><Data ss:Type="String">eileen - webdev&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;katie koenig? analytics</Data></Cell>
+    <Cell><Data ss:Type="String">GOOGLE analytics;IG / FB  admin;WEBDEV (wix);IG post creation / management;Katie Todd?;Eileen;Boran;Kate cygan?;Katie Koenig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ian, social media</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">send assets;add to IG, FB admin;work on twitter, linkedin, ;https://metricool.com/crossposting-instagram-facebook/#Crossposting_from_Instagram_to_Facebook_from_;(Ian) does his account work? ;https://help.instagram.com/192857082456744;ask his content/design ;ian posts to IG &gt; auto-post to FB page</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4v ad campaign calendar</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Fed/Mil holidays: instagram, facebook, email, sms??;Bday outreach: email, sms??</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Phone numbers</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell><Data ss:Type="String">Debbie Whiting&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;**PLEASE DO NOT SEND PICTURES OF DOCUMENTS. ** &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Legal Assistant at Joseph M. Bochicchio, PLLC&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Phone 704.543.2294&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Fax 704.543.2296&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Stella Baker&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Case Manager&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Joseph M. Bochicchio, PLLC&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Attorneys&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;3440 Toringdon Way, Ste. #205&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Charlotte, NC&#160; 28277&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Office: 704.940.0353, ext.**103**&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Fax: 704.543.2296&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Joseph M. Bochicchio&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Managing Member&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Joseph M. Bochicchio, PLLC&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;[3440 Toringdon Way](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F3440%2BToringdon%2BWay%2B%250D%250A%2BSuite%2B205%2B%250D%250A%2BCharlotte%2C%2BNC%2B%2B28277%3Fentry%3Dgmail%26source%3Dg&amp;amp;data=05%7C02%7C%7Cddb5f1ec724b4acdb22d08dd6bb7b375%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638785158946501979%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;amp;sdata=TPdYrbUAQm51D2fFMrG%2FS%2Bdvyetvtv%2BGftmvPDEHy%2F8%3D&amp;amp;reserved=0 &quot;Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&amp;amp;source=g. Click or tap to follow the link.&quot;)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;[Suite 205](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F3440%2BToringdon%2BWay%2B%250D%250A%2BSuite%2B205%2B%250D%250A%2BCharlotte%2C%2BNC%2B%2B28277%3Fentry%3Dgmail%26source%3Dg&amp;amp;data=05%7C02%7C%7Cddb5f1ec724b4acdb22d08dd6bb7b375%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638785158946510987%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;amp;sdata=09lySpZASxv803%2FOzggC5rLfCx1149LsV8mo3yK77Jc%3D&amp;amp;reserved=0 &quot;Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&amp;amp;source=g. Click or tap to follow the link.&quot;)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;[Charlotte, NC](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F3440%2BToringdon%2BWay%2B%250D%250A%2BSuite%2B205%2B%250D%250A%2BCharlotte%2C%2BNC%2B%2B28277%3Fentry%3Dgmail%26source%3Dg&amp;amp;data=05%7C02%7C%7Cddb5f1ec724b4acdb22d08dd6bb7b375%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638785158946521682%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;amp;sdata=XaoHVaew1ODPRmEUA7fK2HpmyGG298z82%2BEeWSUS4co%3D&amp;amp;reserved=0 &quot;Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&amp;amp;source=g. Click or tap to follow the link.&quot;)&#160;[28277](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F3440%2BToringdon%2BWay%2B%250D%250A%2BSuite%2B205%2B%250D%250A%2BCharlotte%2C%2BNC%2B%2B28277%3Fentry%3Dgmail%26source%3Dg&amp;amp;data=05%7C02%7C%7Cddb5f1ec724b4acdb22d08dd6bb7b375%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638785158946531267%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;amp;sdata=LO6%2B%2FJQ1moqPJxbwJhkWHti%2FoVB87uQ1gsDzXtNzd2Y%3D&amp;amp;reserved=0 &quot;Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way+%0D%0A+Suite+205+%0D%0A+Charlotte,+NC++28277?entry=gmail&amp;amp;source=g. Click or tap to follow the link.&quot;)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;[704](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F3440%2BToringdon%2BWay%2C%2BSte.%2B%2523205%2B%250D%250A%2B%250D%250A%2BCharlotte%2C%2BNC%2B28277%2B%250D%250A%2B%250D%250A%2BOffice%3A%2B704%3Fentry%3Dgmail%26source%3Dg&amp;amp;data=05%7C02%7C%7Cddb5f1ec724b4acdb22d08dd6bb7b375%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638785158946540998%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;amp;sdata=ndItuYtQua65NJw3myEEY2SaiekO5zbR1qHOq%2Fvd8QQ%3D&amp;amp;reserved=0 &quot;Protected by Outlook: https://www.google.com/maps/search/3440+Toringdon+Way,+Ste.+%23205+%0D%0A+%0D%0A+Charlotte,+NC+28277+%0D%0A+%0D%0A+Office:+704?entry=gmail&amp;amp;source=g. Click or tap to follow the link.&quot;)-940-0353 x 100 ph.&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;704-543-2296 fax</Data></Cell>
+    <Cell><Data ss:Type="String">research: call rail, nextiva, twilio .. multi-number setup for analytics, campaigns ;brian: reply to Twilio email;Joe's 300-4VET new number?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">social media</Data></Cell>
+    <Cell><Data ss:Type="String">TO DO, this week</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">change PFPs (ig, fb) ;sanitize instagram (followed accounts) </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">create shared GPT account for [org]</Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">alh ? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">draft Firm-wide &quot;how to not get hacked&quot; email </Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">password to passphrase ;&quot;unsubscribe&quot;;how to examine outlook email header?/detailed sender info (SENDER DOMAIN) </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">EDIT PICS FOR WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">SHOOTING PICS w/Sam;g photos - jeep, NC, https://photos.app.goo.gl/APg5pXWnmUGCkcFr9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Email campaign calendar</Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">mil holidays ;holidays;bdays</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">OPSEC</Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">outlook inbox search: &quot;unsubscribe&quot;;open support ticket: when was rule &quot;antispam&quot; created? &gt; matthewdonchester2023@gmail.com;segregate email addresses.. biz and personal;remember Stella's bitwarden password....;set up bitwarden for Joe and Stella....;Set brian as their bitwarden admin</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Stella msft teams license </Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Awaiting exam instructions from Stella;What else needed for e-exam?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">&#129502;: Conduct Cybersecurity Audit</Data></Cell>
+    <Cell><Data ss:Type="String">upcoming</Data></Cell>
+    <Cell><Data ss:Type="String">ABA stance on Cybersecurity:&#160;https://www.americanbar.org/groups/law_practice/resources/law-technology-today/2024/ensuring-security-protecting-your-law-firm-and-client-data/&#160;&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;GDPR guide for Law Firms:&#160;https://www.lawscot.org.uk/media/y1hb5uo4/gdpr-guide-updated-version-2024.pdf</Data></Cell>
+    <Cell><Data ss:Type="String">Create a data breach plan, and disaster recovery plan/ business continuity;Ask Scott if Cybersecurity for the firm is within his scope ;Teach staff about email encryption</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">&quot;vibe&quot; streaming service commercials</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">attach ad pixel(s) to website;fix google tag mgr</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Biz card 2025</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">NEW go with joe silhouette logo? ;new address;current phone number... ;QR code + UTM ... to intaker landing page? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Email</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Google tags;Intaker edits.... Help refine the submissions (up lead quality);Determine referral sources (link analytics + ads);WhatsApp ads;Reddit ads;Qr code  +utm campaign;Google analytics;L4V Ai dev: competitor research, analyze ads data for keywords, ad copy,;Phone numbers;Interviewing candidates, boran, dony;Google business (+ reviews);Email campaigns (tied to simplelaw crm);Archive old sites, cancel hostgator;TV commercial thing;Further thoughts on Ai;New crm in dev;Ad campaigns... Huge room for improvement;Psych eval referrals;Ai seo??? Have been pivoting to it</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Email 2</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Email rule found;L4v email security, user opsec;Meta verified.. Notarized form required;Meta ads</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">FIX META BIZ SUITE??? </Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">attach ad accounts to biz portfolios + assets (both L4v and bbdigital);Separate ig and FB logins (meta accounts panel);Try allowing all cross logins for Brian accounts to access meta biz suite? Try adding individually;Check Joe biz suite admins.... Add both my accounts (bakerb/fb and bbdigital/ig);RESEARCH: meta work account?? Account assigned by admin;Add 2fa sms # to personal acct?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">generate QR + UTM </Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://www.wix.com/tools/qr-code-generator;figure out UTM tags &gt; google analytics</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">instagram, intro triple postsss</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell><Data ss:Type="String">post in sets of 3</Data></Cell>
+    <Cell><Data ss:Type="String">r1) open with branding? jeep, dogtag?, logo??;r2) (PIN) about joe, about l4v, why we're different;2) contact info (use ig app);3) l4v generic (use meta app)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">intaker v3.0.. landing page setup</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">UTM / QR: qr directly to landing page? ;Landing page background == submission instructions;attach to standalone URL  (law4veterans.com/lander?) ;TAG MANAGER: update trigger to.... page action? (inspect page log during form submit) ;customize Intaker landing page</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Joe Headshots</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">final edits (color temp) ;best export settings?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">l4v logos</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">&quot;go with joe&quot; silhouette update </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">psych doc search</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">MD or PhD ... see joe email for reqs;https://americanmedicalexperts.com/;compile list, send to joe ;(wix form) Alex Rosin, MD ALEXROSIN4@GMAIL.COM https://www.linkedin.com/in/alex-rosin-072ba1321;https://www.reddit.com/r/psychotherapists/comments/1iyu0as/where_to_find_clients/;search web, IG, FB, psych today, linkedin, ... VA website? </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Wix Form spam </Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell><Data ss:Type="String">site is: law4veterans.com&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;form is &quot;new form&quot;: L4V.com Wix Contact Form&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;captcha is: Advanced and reCAPTCHA</Data></Cell>
+    <Cell><Data ss:Type="String">does moving OFF front page help? ... ask support ;captcha is active in settings. does it need to be added as form element?;See help ticket reply: bbdigital inbox</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">wix mobile - zooming issue</Data></Cell>
+    <Cell><Data ss:Type="String">week of RIGHT NOW (!!!)... in active progress</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">edit mobile site for 3XXpx wide (look this up)... audit with browser inspection&gt;mobile, not wix prvw;background asset does not move, so.... &quot;prebake&quot; the ~translucent blue onto the background image??;change fonts to 13pt+?  - https://forum.wixstudio.com/t/having-a-page-zoom-out-on-mobile/41668/3;reconfigure hamburger menu (remove?) ;https://support.wix.com/en/article/accessibility-about-zoomed-content;decrease font sizes - https://support.wix.com/en/article/mobile-live-site-loads-zoomed-inout-on-andr;buttons link to external URL instead of site location - https://www.reddit.com/r/WIX/comments/tax9t1;hard code viewport - https://www.reddit.com/r/webdev/comments/vp28k8/comment/ieginbe/;MAYBE THIS IS TIED TO WEBSITE &quot;BACKGROUND COLOR&quot; ELEMENTS?? scrolling the page = color layers moving</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ad blocker incompatible?</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">website flashes and reloads on my phone (adguard);test intaker bot v2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Brian notes re: fiverr wix site</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">(review in progress....) ;great menu /banner. especially phone number</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Code to auto adjust size</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://www.wix.com/blog/responsive-website-design</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Finish website</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">INTEGRATIONS: G tag vs tag mgr? ;SEO: meta tags for literally every element, asset filenames (native vs wix?) ;fix mobile layout menus;ASSETS: edit pics, logos;MENUS: mobile and desktop;fix mobile layout zoom issue;https://www.reddit.com/r/WIX/comments/17s9x2y/best_practices_uploading_images_and_saving_records/;apply joe intaker edits;shrink mobile layout elements;fix mobile layout font size;install intaker;INTAKER: request joe audit;MOBILE SITE: fix layout;CONTENT: faqs... ;Update website socials info/icons</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Fix mobile layout</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://support.wix.com/en/article/wix-editor-troubleshooting-layout-issues-on-your-mobile-site;https://support.wix.com/en/article/site-performance-best-practices</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">GAds / Wix conversion tracker</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">conversion tracker on form? pages? lander?  ;change conversion trigger to... (intaker) Landing page submission URL ;install intaker?;https://support.google.com/google-ads/answer/12215519?sjid=2230791702719779702-NC#zippy=%2Cin-google;SCHEDULE MEETING;abandon Wix forms... replace with Intaker landing page;requires google tag manager</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">google tag mgr</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">(unless that's a google search console bug?? idr. double check) ;install Vibe pixel (see their support article) ;google tag manager show TWO l4v websites... maybe due to &quot;ghost&quot; header tag html? ;fix google tag manager;https://support.google.com/tagmanager/answer/12329709</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">incomplete website SEO?</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">No, not really. - 99% of the time it turns out to be an issue with campaign settings, keyword match types, negatives and how your website caters to a mobile-heavy audience. &#13;&#13;&#13;&#10;- &quot;poor campaign settings coupled with a below average landing page experience.&quot;&#13;&#13;&#13;&#10; - How is pre-click performance vs. post click. If you have high CTR and intent, I would look at your post click performance. &#13;&#13;&#13;&#10; - You can also potentially look into creating landing pages that are specifically for the Google Ads account.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">L4V DIGITAL ASSET MAP </Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">g photos - headshots; proofs, https://photos.app.goo.gl/yCDJkxfoR6G8TLDu8;gdrive - assets for Ian (headshots, logos)  ;gdrive - canva exports (socials posts) ;canva - socials posts;g photos - jeep, NC, https://photos.app.goo.gl/APg5pXWnmUGCkcFr9;Headshots draft edit v1 vhttps://photos.app.goo.gl/yCDJkxfoR6G8TLDu8</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Legal disclaimers, policy</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">*This article is not intended to give, and should not be relied upon for, legal advice in any particular circumstance or fact situation. No action should be taken in reliance upon the information contained in this article without obtaining the advice of an attorney.*</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;not legal advice&quot; per page, per FAQ article;any others reqd?;privacy policy?;geo service area (good for SEO and stupids) </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">media export settings for Wix uploads</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://support.wix.com/en/article/site-performance-optimizing-your-media;https://support.wix.com/en/article/wix-media-supported-media-file-types-and-file-sizes;image formatting tool ... https://squoosh.app/;https://support.wix.com/en/article/optimizing-your-images-and-galleries-for-seo-alt-text;https://forum.wixstudio.com/t/is-anyone-already-using-avif-images-on-wix/65121</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">NOtes for Website</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">L4V CHECKLIST &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;1)&#13;&#13;&#13;&#10;Download Ratings Decision via the VA website [View Your Disability Ratings | Veterans Affairs](https://www.va.gov/disability/view-disability-rating/)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://www.va.gov/disability/view-disability-rating/ &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;2.&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Fax to number: &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Fax: 704.543.2296&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;&#45;&#45;&#45;&#45;&#45;-&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;L4V Prep Guide&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;1.1&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;Link for download https://www.va.gov/disability/view-disability-rating/ &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;2.&#13;&#13;&#13;&#10;Fax to 704.543.2296&#13;&#13;&#13;&#10;Ask for more help</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Should we be using landing pages? Are they already in use?</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">does this mean there is/was a landing page in use? ... https://web.archive.org/web/20241123111758/https://www.law4veterans.com/lander</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Speed Optimization Analysis</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">https://pagespeed.web.dev/analysis/https-law4veterans-com/9omj87rbxu?form_factor=mobile&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://support.wix.com/en/article/site-performance-best-practices</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">terrible mobile UX</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">website zooms in for certain users (android + chrome?) </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">website sprint </Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">https://support.wix.com/en/article/wix-forms-choosing-who-gets-notified-about-form-submissions?tabs=Old-Forms</Data></Cell>
+    <Cell><Data ss:Type="String">remove wix chat ;install intaker;set joe as reply-to? ;write submission page instructions &gt; /va-claim-consultation;final intaker script edits, profile pic, etc.;&#45;&#45;&#45;&#45;&#45;-;standalone chat == landing page?? /lander;move contact form off first page and have buttons direct to /contact-us (was /contact-law4veterans?);&#45;&#45;&#45;&#45;&#45;-;pageload == form submission;&#45;&#45;&#45;&#45;&#45;&#45;-;joe can reply to Lead by replying to the email (GOOD SHIT) == same as intaker;use as trigger to fire conversion action in troy's G.ADS CAMPAIGN ;change to OLD FORM and activate &quot;email only&quot; notifs ;optimize mobile </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Wix Boards</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">) logos and branding;)) check &quot;asset map&quot; task within this planner for others;) headshots ;can they all go in a single board? then subdivide accordingly ;what is ideal file settings: size, resolution, etc.;write SEO filenames before upload to wix???  or upload naked files, then update in wix?;) large assets, heros, backgrounds (jeep... etc.) </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">wix FAQ topics</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">how to check VA letters.. https://news.va.gov/116268/view-download-va-decision-letters-online/; va letters explained https://cck-law.com/veterans-law/types-of-va-decision-letters-explained</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">wix font themes</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">https://support.wix.com/en/article/wix-editor-working-with-text-themes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Wix form (soon intaker chat) - Lead notif email</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">use &quot;OLD FORM&quot; for inbox reply-to-Lead fxn &#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://support.wix.com/en/article/wix-forms-choosing-who-gets-notified-about-form-submissions?tabs=Old-Forms</Data></Cell>
+    <Cell><Data ss:Type="String">use &quot;OLD FORM&quot; for inbox reply-to-Lead fxn (ARTICLE ABOVE);Wix email notif:   &quot;From: Joe Bochicchio | Law4Veterans.com&quot; ... remove Joe B;change pfp to Joe or L4V logo?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">wix themes</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">fonts + sizes according to SEO Hierarchy (H1-P3) ... already done? ;colors;have NOT deployed or tested Theme on live site;Theme SHOULD BE live on https://www.law4veterans.com/va-claims-consultation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">wix: prep for OUTSOURCE</Data></Cell>
+    <Cell><Data ss:Type="String">WIX WEBSITE</Data></Cell>
+    <Cell><Data ss:Type="String">https://support.wix.com/en/article/revamping-your-site-5984263&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;https://support.wix.com/en/article/wix-editor-copying-and-pasting-elements-and-pages-to-another-site&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;orgwide site files? [Wix Media: Organizing the Files in Your Media Manager | Help Center | Wix.com](https://support.wix.com/en/article/wix-media-organizing-the-files-in-your-media-manager)&#13;&#13;&#13;&#10;&#13;&#13;&#13;&#10;(aka Boards) [Wix Media: Using Boards in the Media Manager | Help Center | Wix.com](https://support.wix.com/en/article/wix-media-using-boards-in-the-media-manager)</Data></Cell>
+    <Cell><Data ss:Type="String">update theme... fonts + sizes, colors;create wix asset Boards (org assets) </Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>12</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,18 +1,25 @@
 ---
 name: devOPS template
-about: non client-facing dev tasks, projects, etc.... like building this planner
-title: devOPStask
+about: invisible dev tasks, projects, etc.... like building this planner
+title: TITLE
 labels: l4v devOPS
 assignees: ''
 
 ---
 
-GOAL: 
+Task or Issue:
+
+
+
+Solution?: 
+
+
+
 
 
 Sub-tasks: 
 
-[ ] 1.  
-[ ] 1.  
-[ ] 1.  
-[ ] 1.
+- [ ] 1.  
+- [ ] 1.  
+- [ ] 1.  
+= [ ] 1.
