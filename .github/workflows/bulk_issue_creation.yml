@@ -1,0 +1,21 @@
+name: Bulk issue creation
+
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Path to file containing gh issue commands'
+        required: false
+        default: 'Planner2ghlist.txt'
+
+jobs:
+  create_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run commands
+        run: ./create_issues.sh "$FILE"
+        env:
+          FILE: ${{ github.event.inputs.file }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
