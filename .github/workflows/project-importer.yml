@@ -25,7 +25,7 @@ jobs:
       # Required to create/edit issues and labels
       issues: write
       # Required to read/write to the project
-      projects: write
+#!!   projects: write
       # Required to check out the repo and commit the error log
       contents: write
     
