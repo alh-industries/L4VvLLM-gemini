@@ -14,7 +14,7 @@ on:
       - main
       - master # Include if your primary branch is named master
     paths:
-      - '.github/data/**' # Adjust this path to match the one in the script
+      - 'TSV_HERE/**' # Adjust this path to match the one in the script
 
 jobs:
   import-issues:
@@ -29,10 +29,10 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Make script executable
-        run: chmod +x .github/scripts/import_issues.sh
+        run: chmod +x import_issues.sh # script filepath, in this case is root 
 
       - name: Run the import script
         env:
@@ -41,14 +41,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           # The GITHUB_REPOSITORY is needed for the gh CLI to know where to work.
           GH_REPO: ${{ github.repository }}
-        run: ./.github/scripts/import_issues.sh
+        run: ./import_issues.sh
 
       - name: Commit error log if it exists
         run: |
           if [ -f .github/data/errors.md ]; then
             git config --global user.name 'GitHub Actions Bot'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-            git add .github/data/errors.md
+            git add TSV_HERE/errors.md
             # Check if there are changes to commit
             if git diff --staged --quiet; then
               echo "No changes to commit in errors.md."
