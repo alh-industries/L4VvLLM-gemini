@@ -14,9 +14,9 @@ on:
       - main
     #  - master # Include if your primary branch is named master
     paths:
-      - './TSV_HERE/**' # Adjust this path to match the one in the script
-    paths-ignore:
-      - './TSV_HERE/*.md'
+      - './TSV_HERE/*.tsv' # Adjust this path to match the one in the script
+  #  paths-ignore:
+  #    - './TSV_HERE/*.md'
 
 jobs:
   import-issues:
