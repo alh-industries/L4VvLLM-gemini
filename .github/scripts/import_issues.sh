@@ -18,7 +18,7 @@ set -e # Exit immediately if a command exits with a non-zero status.
 PROJECT_NUMBER="6" 
 
 # The folder path where your .tsv or .csv data file is located. Must end with a slash.
-DATA_FILE_PATH="TSV_HERE"
+DATA_FILE_PATH="TSV_HERE/"
 
 # The maximum number of parallel jobs to run.
 # A lower number is safer to avoid GitHub API rate limits. Recommended: 2-4.
@@ -84,9 +84,16 @@ process_row() {
 
   # 1. Create all labels. `|| true` ignores errors if the label already exists.
   for label in "${issue_labels[@]}"; do
-    echo "Ensuring label exists: $label"
-    gh label create "$label" --color "b6d7a8" --description "Auto-generated label" || true
-  done
+ #   echo "Ensuring label exists: $label"
+ #   gh label create "$label" --color "b6d7a8" --description "Auto-generated label" || true
+ # done
+    random_color=$(openssl rand -hex 3) # Generate a random 6-character hex color using openssl
+    
+    echo "Ensuring label exists: $label with random color #$random_color"
+    
+    # Use the $random_color variable in the command
+    gh label create "$label" --color "$random_color" --description "Auto-generated from user spreadsheet" || true
+done
 
   # Prepare labels for gh command
   labels_arg=$(printf ",%s" "${issue_labels[@]}")
