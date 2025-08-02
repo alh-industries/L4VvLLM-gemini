@@ -108,7 +108,7 @@ process_row() {
   else
     echo "No existing issue found. Creating new issue."
     # Create new issue with all arguments prepared
-    issue_url=$(gh issue create --title "$issue_title" --body "$issue_body" "${label_args[@]}" --json url -q '.url')
+    issue_url=$(gh issue create --title "$issue_title" --body "$issue_body" "${label_args[@]}")
   fi
 
   if [ -z "$issue_url" ]; then
