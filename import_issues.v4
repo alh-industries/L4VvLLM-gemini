@@ -15,7 +15,7 @@ set -e # Exit immediately if a command exits with a non-zero status.
 # PLEASE EDIT THESE VARIABLES
 # ============================================
 # The number of your GitHub Project (e.g., the '123' in 'https://github.com/users/your-user/projects/123')
-PROJECT_NUMBER="6"
+PROJECT_NUMBER="8"   # https://github.com/orgs/alh-industries/projects/8
 
 # The folder path where your .tsv or .csv data file is located. Must end with a slash.
 DATA_FILE_PATH="TSV_HERE/"
