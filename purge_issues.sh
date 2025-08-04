@@ -2,8 +2,8 @@
 # ===================================================================================
 #
 # DANGER: THIS SCRIPT DELETES REPOSITORY ISSUES AND CUSTOM LABELS.
-# Version: 2.2 - Condensed to one loop
-#
+# Version: 2.2.1 - Condensed to one loop
+# 2.2.1 - add 'read' cmd (last line)
 # This script must be run manually from your local machine.
 #
 # ===================================================================================
@@ -36,3 +36,5 @@ fi
 
 echo
 echo "Purge script finished."
+echo "Press [Enter] to close the terminal."
+read

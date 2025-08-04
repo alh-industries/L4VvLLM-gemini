@@ -1,0 +1,88 @@
+# ===================================================================================
+#
+# GitHub Project Importer Workflow (v1.3)
+#
+# Defines the automated process for running the import script.
+# This version is corrected to use a Personal Access Token (PAT) for project
+# access and includes robust error handling to prevent commit loops.
+#
+# ===================================================================================
+#
+# --- CHANGELOG ---
+#
+# v1.0 (Initial):
+#   - Basic workflow to run the script from a hardcoded path.
+#   - Triggered on push to the data directory.
+#
+# v1.1:
+#   - Added `paths-ignore` to attempt to prevent commit loops. (Incorrect syntax)
+#   - Added `permissions` block for project access. (Invalid scope for default token)
+#
+# v1.2:
+#   - Attempted to correct the trigger logic.
+#   - Switched the `GH_TOKEN` environment variable to use `secrets.GH_PAT`.
+#
+# v1.3 (Current):
+#   - Implemented the correct and robust trigger logic using a negation pattern (`!`)
+#     in the `paths` block to properly ignore the `errors.md` file and prevent loops.
+#   - Removed the invalid `projects` permission.
+#   - Confirmed `GH_TOKEN: ${{ secrets.GH_PAT }}` is the correct method for providing
+#     the necessary permissions for project interactions.
+#
+# ===================================================================================
+
+name: Import Issues from File
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  # Triggers the workflow on a push to the main branch
+  push:
+    branches:
+      - main
+    paths:
+      # Include all files in the TSV_HERE directory and its subdirectories
+      - 'TSV_HERE/**'
+      # But, EXCLUDE any file ending with .md in that directory to prevent commit loops
+      - '!TSV_HERE/*.md'
+
+jobs:
+  import-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      # Base permissions required by the default GITHUB_TOKEN for repo operations
+      issues: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x ./import_issues.sh
+
+      - name: Run the import script
+        env:
+          # This is the crucial part: Use the Personal Access Token (from secrets)
+          # for all 'gh' commands. This gives the script the necessary permissions
+          # to modify projects, which the default token does not have.
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+        run: ./import_issues.sh
+
+      - name: Commit error log if it exists
+        run: |
+          # The path to the error log is hardcoded relative to the repo root
+          if [ -f TSV_HERE/errors.md ]; then
+            git config --global user.name 'GitHub Actions Bot'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add TSV_HERE/errors.md
+            # Check if there are actual changes to commit before committing
+            if git diff --staged --quiet; then
+              echo "No changes to commit in errors.md."
+            else
+              git commit -m "docs: log import errors"
+              git push
+            fi
+          fi
