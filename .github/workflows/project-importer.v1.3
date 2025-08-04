@@ -1,6 +1,6 @@
 # ===================================================================================
 #
-# GitHub Project Importer Workflow (v1.4)
+# GitHub Project Importer Workflow (v1.3)
 #
 # Defines the automated process for running the import script.
 # This version recursively finds the import script, so it can be located
@@ -25,14 +25,11 @@
 #   - Switched the `GH_TOKEN` environment variable to use `secrets.GH_PAT` to
 #     provide the necessary permissions for project interactions.
 #
-# v1.3:
+# v1.3 (Current):
 #   - Made the script execution path dynamic.
 #   - Added a "Find the import script" step that uses `find` to locate the
 #     `import_issues.sh` script anywhere in the repository.
-#
-# v1.4 (Current):
-#   - Activated the Personal Access Token (GH_PAT) to enable GitHub Projects
-#     integration by default.
+#   - This makes the workflow resilient to changes in the script's location.
 #
 # ===================================================================================
 
@@ -59,7 +56,7 @@ jobs:
       # Base permissions required by the GITHUB_TOKEN for repo operations
       issues: write
       contents: write
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -81,12 +78,12 @@ jobs:
 
       - name: Run the import script
         env:
-          # Use a Personal Access Token (from secrets) to enable project features
+          # Use a Personal Access Token (from secrets) if you enable project features
           # This token MUST be created with 'repo' and 'project' scopes.
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          # GH_TOKEN: ${{ secrets.GH_PAT }}
           #
           # Use the default token if project features are disabled in the script.
-          # GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         # Use the output from the "find_script" step above
         run: ${{ steps.find_script.outputs.script_path }}
