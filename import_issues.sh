@@ -1,29 +1,31 @@
 #!/bin/bash
-set -e # Exit immediately if a command exits with a non-zero status.
-
 # ===================================================================================
 #
-# GITHUB PROJECT AUTOMATION SCRIPT (v3.2 - Projects Disabled, Column # Option)
+# GITHUB PROJECT AUTOMATION SCRIPT (v4.0 - Projects Enabled)
 #
-# - Handles existing labels and issues gracefully.
-# - Provides detailed error logging.
-# - Uses stricter column parsing to prevent errors.
-# - Adds LOCAL_ID as a label to each issue.
-# - Includes a new, optional way to define labels by column number.
+# This script reads a TSV/CSV file to create and update GitHub issues, labels,
+# and project items, including custom fields.
+#
+# --- CHANGELOG ---
+# v3.1: Projects functionality disabled.
+# v4.0: Re-enabled and finalized project integration. Uses modern `item-edit`
+#       syntax to set custom fields by name.
 #
 # ===================================================================================
 
+# Stop script on any error
+set -e
 
-# ============================================
+# ===========================================
 # PLEASE EDIT THESE VARIABLES
-# ============================================
+# ===========================================
 PROJECT_NUMBER="8"
 DATA_FILE_PATH="TSV_HERE/"
-# ============================================
+# ===========================================
 
 
 # --- Script setup and initialization ---
-DATA_FILE=$(find "$DATA_FILE_path" -maxdepth 1 \( -name "*.tsv" -o -name "*.csv" \) -print -quit)
+DATA_FILE=$(find "$DATA_FILE_PATH" -maxdepth 1 \( -name "*.tsv" -o -name "*.csv" \) -print -quit)
 ERROR_LOG_FILE="${DATA_FILE_PATH}errors.md"
 
 if [ -z "$DATA_FILE" ]; then
@@ -32,15 +34,20 @@ if [ -z "$DATA_FILE" ]; then
 fi
 
 echo "Processing file: $DATA_FILE"
+# Determine delimiter by file extension
 DELIMITER=$'\t'
 if [[ "$DATA_FILE" == *.csv ]]; then
   DELIMITER=','
 fi
+
+# Clean up previous error log
 rm -f "$ERROR_LOG_FILE"
 
-# --- Main Processing Logic ---
+# Read the header row to map column names to indices
 IFS="$DELIMITER" read -r -a HEADERS < <(head -n 1 "$DATA_FILE")
 
+# --- Main Processing Function ---
+# This function processes a single row from the data file.
 process_row() {
   local row_content="$1"
   local local_id=""
@@ -49,68 +56,67 @@ process_row() {
   local issue_labels=()
   declare -A project_fields
 
-  # --- OPTIONAL: Define Labels by Column Number ---
-  # To use this, comment out the "ISSUE_LABEL_*" section below and uncomment this.
-  # Note: Column numbers start at 1.
-  # local label_column_numbers=(4 5 6 7 8) # Example: Use columns 4, 5, 6, 7, and 8 for labels
-
-  # Stricter parsing loop to correctly identify columns
+  # === PARSE THE ROW ===
+  # Read the provided row and assign values to variables based on the header.
   IFS="$DELIMITER" read -r -a values <<< "$row_content"
   for i in "${!HEADERS[@]}"; do
     header=$(echo "${HEADERS[$i]}" | tr -d '\r')
     value=$(echo "${values[$i]}" | tr -d '\r')
 
-    # --- Find values by header name (current method) ---
     if [[ "$header" == "LOCAL_ID" ]]; then
       local_id="$value"
+      # Automatically add the Local ID as a label for easy tracking
       [ -n "$value" ] && issue_labels+=("ID:$value")
+
     elif [[ "$header" == "ISSUE_TITLE" ]]; then
       issue_title="$value"
+
     elif [[ "$header" == "ISSUE_BODY" ]]; then
+      # Replace semicolons with newlines to format the issue body
       issue_body=$(echo "$value" | sed 's/;/\\n/g')
-    elif [[ "$header" == ISSUE_LABEL_* ]]; then # This is the currently active method
+
+    elif [[ "$header" == ISSUE_LABEL_* ]]; then
+      # This is ISSUE specific logic
       [ -n "$value" ] && issue_labels+=("$value")
+
     elif [[ "$header" == PROJECT_FIELD_* ]]; then
+      # This is PROJECT specific logic
+      # The field name is the header minus "PROJECT_FIELD_"
       [ -n "$value" ] && project_fields["${header#PROJECT_FIELD_}"]="$value"
     fi
-
-    # --- Find values by column number (new, disabled method) ---
-    # To use this, uncomment the next 3 lines and the 'label_column_numbers' array above.
-    # for col_num in "${label_column_numbers[@]}"; do
-    #   [ $((i + 1)) -eq "$col_num" ] && [ -n "$value" ] && issue_labels+=("$value")
-    # done
-
   done
 
+  # Skip row if it doesn't have a title
   if [ -z "$issue_title" ]; then
     echo "Skipping row with empty title."
     return
   fi
 
-  # 1. Create all labels. `|| true` ignores errors if a label already exists.
+  # === PROCESS ISSUE AND LABELS ===
+  echo "ID:$local_id - Processing issue: '$issue_title'"
+
+  # 1. Create all labels first. `|| true` ignores errors if a label already exists.
   for label in "${issue_labels[@]}"; do
     random_color=$(openssl rand -hex 3)
-    echo "ID:$local_id - Ensuring label exists: $label"
-    gh label create "$label" --color "$random_color" --description "Auto-generated" || true
+    gh label create "$label" --color "$random_color" --description "Auto-generated from script" || true
   done
 
+  # Prepare label arguments for the create command
   label_args=()
   for label in "${issue_labels[@]}"; do
     label_args+=("--label" "$label")
   done
 
-  # 2. Check for and Create/Update Issue
-  echo "ID:$local_id - Processing issue: '$issue_title'"
+  # 2. Check if issue exists (Idempotency).
   existing_issue_url=$(gh issue list --search "in:title \"$issue_title\"" --state all --limit 1 --json url -q '.[0].url' || echo "")
 
   local issue_url=""
   if [ -n "$existing_issue_url" ]; then
     echo "ID:$local_id - Found existing issue. Updating: $existing_issue_url"
     issue_url=$existing_issue_url
+    # Update the body and labels of the existing issue
     gh issue edit "$issue_url" --body "$issue_body"
-    for label in "${issue_labels[@]}"; do
-        gh issue edit "$issue_url" --add-label "$label" || true
-    done
+    gh issue edit "$issue_url" --add-label "$(IFS=,; echo "${issue_labels[*]}")" || true
   else
     echo "ID:$local_id - No existing issue found. Creating new issue."
     issue_url=$(gh issue create --title "$issue_title" --body "$issue_body" "${label_args[@]}")
@@ -118,34 +124,50 @@ process_row() {
 
   if [ -z "$issue_url" ]; then
     echo "Failed to create or find issue."
-    return 1
+    return 1 # Triggers error logging
   fi
 
-  # 3. Add to Project (DISABLED)
-  # echo "ID:$local_id - Adding issue to project $PROJECT_NUMBER..."
-  # item_id=$(gh project item-create "$PROJECT_NUMBER" --owner "@me" --issue "$issue_url" --format json | jq -r '.id')
+  # === PROCESS PROJECT INTEGRATION ===
 
-  # if [ -z "$item_id" ]; then
-  #   echo "Failed to add issue to project."
-  #   return 1
-  # fi
+  # 3. Add issue to the project and get the project item ID.
+  echo "ID:$local_id - Adding issue to project $PROJECT_NUMBER..."
+  # The project number is a positional argument, it comes before the flags.
+  item_id=$(gh project item-add "$issue_url" --owner "@me" --project-id "$PROJECT_NUMBER" --format json | jq -r '.id' || echo "")
+  
+  if [ -z "$item_id" ]; then
+      echo "Warning: Could not add issue #$issue_number to project. It might already be there. Trying to find it..."
+      # If adding fails, it might already be in the project. We need to find its ID.
+      item_id=$(gh project item-list "$PROJECT_NUMBER" --owner "@me" --format json | jq --argjson issueNumber "$(echo "$issue_url" | rev | cut -d'/' -f1 | rev)" -r '.items[] | select(.content.number == $issueNumber) | .id')
+  fi
 
-  # 4. Update Project Fields (DISABLED)
-  # for field_name in "${!project_fields[@]}"; do
-  #     field_value="${project_fields[$field_name]}"
-  #     echo "ID:$local_id - Updating project field '$field_name' to '$field_value'"
-  #     gh project item-edit --id "$item_id" --field-name "$field_name" --text "$field_value"
-  # done
+  if [ -z "$item_id" ]; then
+      echo "Failed to find or add issue '$issue_title' to project $PROJECT_NUMBER."
+      return 1 # Triggers error logging
+  fi
+  
+  # 4. Loop through and update all custom project fields for the item.
+  for field_name in "${!project_fields[@]}"; do
+      field_value="${project_fields[$field_name]}"
+      echo "ID:$local_id - Updating project field '$field_name' to '$field_value'"
+      
+      # This powerful `item-edit` command sets fields by name.
+      # It requires a modern version of the gh CLI.
+      gh project item-edit --id "$item_id" --field-name "$field_name" --text "$field_value"
+  done
 }
 
-# --- Execution ---
-# Use a while-read loop for safety and improved error logging
+# --- SCRIPT EXECUTION ---
+# Use a while-read loop for safety and improved error logging.
+# It processes the file line-by-line, starting after the header.
 tail -n +2 "$DATA_FILE" | while IFS= read -r line; do
+    # For each line, attempt to run process_row. Capture STDERR to a variable on failure.
     error_output=$(process_row "$line" 2>&1) || {
-        IFS= read -r local_id issue_title <<<$(echo "$line" | cut -f1,2)
+        # This block runs if process_row fails (returns non-zero).
+        local_id=$(echo "$line" | cut -f1) # Get Local ID for logging
+        title=$(echo "$line" | cut -f2) # Get Title for logging
         echo "---" >> "$ERROR_LOG_FILE"
         echo "Timestamp: $(date)" >> "$ERROR_LOG_FILE"
-        echo "Failed to process row with LOCAL_ID: $local_id and Title: '$issue_title'" >> "$ERROR_LOG_FILE"
+        echo "Failed to process row with LOCAL_ID: $local_id and Title: '$title'" >> "$ERROR_LOG_FILE"
         echo "**Error Message:**" >> "$ERROR_LOG_FILE"
         echo "\`\`\`" >> "$ERROR_LOG_FILE"
         echo "$error_output" >> "$ERROR_LOG_FILE"
