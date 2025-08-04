@@ -1,0 +1,61 @@
+# .github/workflows/project-importer.yml
+# This workflow automates creating/updating GitHub issues from a TSV/CSV file.
+
+name: Import Issues from File
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  # Triggers the workflow on a push to the main branch, but only
+  # if files in the specified data path have changed.
+  push:
+    branches:
+      - main
+    #  - master # Include if your primary branch is named master
+    paths:
+      - './TSV_HERE/*.tsv' # Adjust this path to match the one in the script
+  #  paths-ignore:
+  #    - './TSV_HERE/*.md'
+
+jobs:
+  import-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      # Required to create/edit issues and labels
+      issues: write
+      # Required to read/write to the project
+#!!   projects: write
+      # Required to check out the repo and commit the error log
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x ./import_issues.sh # script filepath, in this case is root 
+
+      - name: Run the import script
+        env:
+          # The GITHUB_TOKEN is automatically created by Actions
+          # and provides authenticated access to the gh CLI.
+          GH_TOKEN: ${{ github.token }}
+          # The GITHUB_REPOSITORY is needed for the gh CLI to know where to work.
+          GH_REPO: ${{ github.repository }}
+        run: ./import_issues.sh
+
+      - name: Commit error log if it exists
+        run: |
+          if [ -f ./TSV_HERE/errors.md ]; then
+            git config --global user.name 'GitHub Actions Bot'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add TSV_HERE/errors.md
+            # Check if there are changes to commit
+            if git diff --staged --quiet; then
+              echo "No changes to commit in errors.md."
+            else
+              git commit -m "docs: log import errors"
+              git push
+            fi
+          fi

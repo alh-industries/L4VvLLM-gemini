@@ -1,0 +1,79 @@
+#!/bin/bash
+# ===================================================================================
+#
+# DANGER: THIS SCRIPT DELETES ALL OPEN AND CLOSED ISSUES IN THE REPOSITORY.
+# IT ALSO CONTAINS AN OPTIONAL SECTION TO DELETE ALL CUSTOM LABELS.
+#
+# Use this script to "purge" the repo before performing a fresh import.
+# It must be run manually from your local machine.
+#
+# --- CHANGELOG ---
+# v1.0: Initial release. Deletes all issues.
+# v1.1: Added new, commented-out section to delete all non-default labels.
+#
+# ===================================================================================
+
+# --- (Optional) Delete All Custom Labels ---
+# To run this, uncomment the block below.
+# This section deletes all labels that are NOT default GitHub labels.
+# It is useful for a complete cleanup before a fresh import.
+# -----------------------------------------------------------------------------------
+#
+# echo "WARNING: This will permanently delete all non-default labels."
+# read -p "Do you want to proceed with deleting labels? (y/n) " -n 1 -r
+# echo    # move to a new line
+# if [[ $REPLY =~ ^[Yy]$ ]]; then
+#
+#   # List of default GitHub labels. Any label NOT in this list will be deleted.
+#   default_labels=(
+#     "bug"
+#     "documentation"
+#     "duplicate"
+#     "enhancement"
+#     "good first issue"
+#     "help wanted"
+#     "invalid"
+#     "question"
+#     "wontfix"
+#   )
+#
+#   echo "Fetching all labels from the repo to find custom ones..."
+#   # Loop through each label in the repo
+#   gh label list --json name -q '.[].name' | while IFS= read -r label; do
+#     is_default=false
+#     # Check if the label is in our list of default labels
+#     for default in "${default_labels[@]}"; do
+#       if [[ "$label" == "$default" ]]; then
+#         is_default=true
+#         break
+#       fi
+#     done
+#
+#     # If the label is not a default label, delete it
+#     if ! $is_default; then
+#       echo "Deleting custom label: $label"
+#       gh label delete "$label" --yes
+#     fi
+#   done
+#
+#   echo "Custom labels purged."
+# fi
+#
+# -----------------------------------------------------------------------------------
+
+
+echo "WARNING: This will permanently delete ALL issues from the repository."
+read -p "Are you sure you want to continue with deleting issues? (y/n) " -n 1 -r
+echo    # move to a new line
+if [[ !$REPLY =~ ^[Yy]$ ]]
+then
+    echo "Aborted issue deletion."
+    exit 1
+fi
+
+echo "Fetching all issues to delete..."
+
+# Get all issue numbers, then pipe them to the delete command.
+gh issue list --state all --limit 9999 --json number -q '.[].number' | xargs -n 1 -I {} gh issue delete {} --yes
+
+echo "All issues have been purged."

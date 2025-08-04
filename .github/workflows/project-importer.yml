@@ -1,5 +1,37 @@
-# .github/workflows/project-importer.yml
-# This workflow automates creating/updating GitHub issues from a TSV/CSV file.
+# ===================================================================================
+#
+# GitHub Project Importer Workflow (v1.3)
+#
+# Defines the automated process for running the import script.
+# This version recursively finds the import script, so it can be located
+# anywhere in the repository.
+#
+# ===================================================================================
+#
+# --- CHANGELOG ---
+#
+# v1.0 (Initial):
+#   - Basic workflow to run the script from a hardcoded path.
+#   - Triggered on push to the data directory.
+#
+# v1.1:
+#   - Added `paths-ignore` to attempt to prevent commit loops. (Incorrect syntax)
+#   - Added `permissions` block for project access. (Incorrect scope)
+#
+# v1.2:
+#   - Corrected the trigger logic by using a negation pattern (`!`) in the `paths`
+#     block to correctly ignore the `errors.md` file and prevent loops.
+#   - Removed the invalid `projects` permission.
+#   - Switched the `GH_TOKEN` environment variable to use `secrets.GH_PAT` to
+#     provide the necessary permissions for project interactions.
+#
+# v1.3 (Current):
+#   - Made the script execution path dynamic.
+#   - Added a "Find the import script" step that uses `find` to locate the
+#     `import_issues.sh` script anywhere in the repository.
+#   - This makes the workflow resilient to changes in the script's location.
+#
+# ===================================================================================
 
 name: Import Issues from File
 
@@ -7,47 +39,59 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-  # Triggers the workflow on a push to the main branch, but only
-  # if files in the specified data path have changed.
+  # Triggers the workflow on a push to the main branch
   push:
     branches:
       - main
-    #  - master # Include if your primary branch is named master
     paths:
-      - './TSV_HERE/*.tsv' # Adjust this path to match the one in the script
-  #  paths-ignore:
-  #    - './TSV_HERE/*.md'
+      # Include all files in the TSV_HERE directory and its subdirectories
+      - 'TSV_HERE/**'
+      # But, EXCLUDE any file ending with .md in that directory to prevent loops
+      - '!TSV_HERE/*.md'
 
 jobs:
   import-issues:
     runs-on: ubuntu-latest
     permissions:
-      # Required to create/edit issues and labels
+      # Base permissions required by the GITHUB_TOKEN for repo operations
       issues: write
-      # Required to read/write to the project
-#!!   projects: write
-      # Required to check out the repo and commit the error log
       contents: write
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # New step to find the script path dynamically
+      - name: Find the import script
+        id: find_script
+        run: |
+          script_path=$(find . -type f -name "import_issues.sh")
+          if [ $(echo "$script_path" | wc -l) -ne 1 ]; then
+            echo "Error: Found zero or more than one 'import_issues.sh' script. Please ensure exactly one exists."
+            exit 1
+          fi
+          echo "script_path=$script_path" >> $GITHUB_OUTPUT
+
       - name: Make script executable
-        run: chmod +x ./import_issues.sh # script filepath, in this case is root 
+        # Use the output from the "find_script" step above
+        run: chmod +x ${{ steps.find_script.outputs.script_path }}
 
       - name: Run the import script
         env:
-          # The GITHUB_TOKEN is automatically created by Actions
-          # and provides authenticated access to the gh CLI.
+          # Use a Personal Access Token (from secrets) if you enable project features
+          # This token MUST be created with 'repo' and 'project' scopes.
+          # GH_TOKEN: ${{ secrets.GH_PAT }}
+          #
+          # Use the default token if project features are disabled in the script.
           GH_TOKEN: ${{ github.token }}
-          # The GITHUB_REPOSITORY is needed for the gh CLI to know where to work.
           GH_REPO: ${{ github.repository }}
-        run: ./import_issues.sh
+        # Use the output from the "find_script" step above
+        run: ${{ steps.find_script.outputs.script_path }}
 
       - name: Commit error log if it exists
         run: |
-          if [ -f ./TSV_HERE/errors.md ]; then
+          # The path to the error log is hardcoded relative to the repo root
+          if [ -f TSV_HERE/errors.md ]; then
             git config --global user.name 'GitHub Actions Bot'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             git add TSV_HERE/errors.md
