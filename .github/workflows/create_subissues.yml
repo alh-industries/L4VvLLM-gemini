@@ -1,0 +1,64 @@
+# ////////////////////////////////////////////////////////////////////////////
+#
+# NAME: Create Sub-issues from Delimited String
+#
+# VERSION: 1.1
+#
+# PURPOSE: A GitHub Actions workflow that triggers the automatic creation of 
+#          sub-issues from a parent issue's body. The body is expected to be
+#          a semicolon-delimited string.
+#
+# TRIGGERS:
+#   - Automatically on the creation of a new issue.
+#   - Manually via the 'workflow_dispatch' event in the Actions tab.
+#
+# CHANGELOG:
+#
+#   1.1 - 2025-08-04: Made script path directory-agnostic.
+#       - Updated the 'run' command to use ${{ github.workspace }}.
+#
+#   1.0 - 2025-08-04: Initial release.
+#       - Workflow created with dual triggers (automatic and manual).
+#       - Uses versioned actions for stability (checkout@v4, setup-python@v5).
+#       - Calls the 'create_subissues.py' script.
+#
+# ////////////////////////////////////////////////////////////////////////////
+
+name: "Create Sub-issues from Delimited String"
+
+on:
+  issues:
+    types: [opened]
+  
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'The number of the issue to process'
+        required: true
+
+jobs:
+  create-subissues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write 
+      contents: read 
+
+    steps:
+      - name: "Checkout repository code"
+        uses: actions/checkout@v4
+
+      - name: "Set up Python environment"
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: "Install Python dependencies"
+        run: pip install PyGithub
+
+      - name: "Run sub-issue creation script"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_NAME: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.inputs.issue_number || github.event.issue.number }}
+        # This command now uses an absolute path to the script, making it directory-agnostic.
+        run: python ${{ github.workspace }}/scripts/create_subissues.py
