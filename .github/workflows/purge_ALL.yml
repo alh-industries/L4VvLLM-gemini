@@ -1,0 +1,47 @@
+# ////////////////////////////////////////////////////////////////////////////
+#
+# NAME: ⚠️ Purge ALL (Issues & Labels)
+#
+# VERSION: 3.0
+#
+# PURPOSE: Runs the non-interactive purge_ALL.sh script.
+#          THIS IS A DESTRUCTIVE ACTION.
+#
+# TRIGGERS:
+#   - Manually only, via the 'workflow_dispatch' event.
+#
+# CHANGELOG:
+#
+#   3.0: Refactored names to purge_ALL.yml, purge_ALL.sh, and GH_PURGE secret.
+#
+# ////////////////////////////////////////////////////////////////////////////
+
+name: "⚠️ Purge ALL (Issues & Labels)"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  purge-repository-contents:
+    runs-on: ubuntu-latest
+    # Safety check: ensures this can only be run from the main branch.
+    if: github.ref == 'refs/heads/main'
+    
+    permissions:
+      contents: read
+      issues: write 
+      
+    steps:
+      - name: "Checkout repository code"
+        uses: actions/checkout@v4
+
+      - name: "Login to GitHub CLI with PAT"
+        env:
+          # Use the powerful Personal Access Token stored in the GH_PURGE secret
+          GH_TOKEN: ${{ secrets.GH_PURGE }}
+        run: echo "$GH_TOKEN" | gh auth login --with-token
+
+      - name: "DANGER: Run the non-interactive purge script"
+        run: |
+          chmod +x ./purge_ALL.sh
+          ./purge_ALL.sh
