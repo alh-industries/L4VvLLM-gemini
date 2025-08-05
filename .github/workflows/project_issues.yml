@@ -1,0 +1,57 @@
+# ////////////////////////////////////////////////////////////////////////////
+#
+# NAME: Sync Project Issues from TSV
+#
+# VERSION: 1.1
+#
+# PURPOSE: A workflow to run the project_issues.py script, which
+#          syncs data from a TSV file to issues within a GitHub Project.
+#
+# TRIGGERS:
+#   - Manually via the 'workflow_dispatch' event in the Actions tab.
+#   - On a schedule (e.g., daily at 08:00 UTC).
+#
+# CHANGELOG:
+#
+#   1.1 - 2025-08-04: Refactored script name to project_issues.py.
+#
+#   1.0 - 2025-08-04: Initial release.
+#
+# ////////////////////////////////////////////////////////////////////////////
+
+name: "Sync Project Issues from TSV"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  sync-project-issues: # Job name updated
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      projects: write
+
+    steps:
+      - name: "Checkout repository code"
+        uses: actions/checkout@v4
+
+      - name: "Set up Python environment"
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: "Install Python dependencies"
+        run: pip install -r ${{ github.workspace }}/scripts/requirements.txt
+
+      - name: "Run project issue sync script"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Script Configuration
+          PROJECT_ID: "alh-industries/3" # Change to your Project ID
+          TSV_FILE_PATH: "${{ github.workspace }}/PLANNERv6.tsv" # Absolute path to the TSV
+          ISSUE_NUMBER_COLUMN: "issue_number" # The exact header in your TSV
+        # Updated to run the renamed script
+        run: python ${{ github.workspace }}/scripts/project_issues.py

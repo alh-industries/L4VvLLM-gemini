@@ -1,0 +1,57 @@
+# ////////////////////////////////////////////////////////////////////////////
+#
+# NAME: Mass Create Projects from TSV
+#
+# VERSION: 2.0
+#
+# PURPOSE: A workflow to run the mass_project.py script. It finds all .tsv
+#          files in the /TSV_HERE/ directory and creates a complete
+#          GitHub Project for each one.
+#
+# TRIGGERS:
+#   - Manually via the 'workflow_dispatch' event in the Actions tab.
+#
+# CHANGELOG:
+#
+#   2.0 - 2025-08-04:
+#       - Pointed to new mass_project.py script.
+#       - Removed manual file path input, as script now reads a directory.
+#
+#   1.0 - 2025-08-04: Initial release.
+#
+# ////////////////////////////////////////////////////////////////////////////
+
+name: "Mass Create Projects from TSV Directory"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mass-create-and-populate-project:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      projects: write
+
+    steps:
+      - name: "Checkout repository code"
+        uses: actions/checkout@v4
+
+      - name: "Set up Python environment"
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: "Install Python dependencies"
+        run: pip install -r ${{ github.workspace }}/scripts/requirements.txt
+
+      - name: "Run Mass Project Creation Script"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The script now only needs the owner and repo context.
+          # It finds the .tsv files on its own.
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          TSV_DIRECTORY: "${{ github.workspace }}/TSV_HERE"
+        run: python ${{ github.workspace }}/scripts/mass_project.py
