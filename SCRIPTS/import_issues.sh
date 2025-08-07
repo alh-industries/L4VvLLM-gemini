@@ -1,183 +1,92 @@
 #!/bin/bash
 # ===================================================================================
 #
-# GITHUB PROJECT AUTOMATION SCRIPT (v5.0)
+# SCRIPT A: CREATE ISSUES AND LABELS (v6.0)
 #
-# This version uses a two-phase approach:
-# 1. It reads the file once to create ALL labels first.
-# 2. It reads the file a second time to create issues, applying the
-#    now-existing labels during creation.
-#
-# - All project and sub-issue functionality has been commented out.
-# - Retains all previous features (rate-limiting, robust parsing, etc.).
+# - Uses dynamic substring matching to find column indexes, making it
+#   resilient to header name changes and column reordering.
+# - Phase 1: Reads the file to find and create all unique labels.
+# - Phase 2: Reads the file again to create/update issues with those labels.
 #
 # ===================================================================================
 
+# --- Configuration ---
+DATA_FILE_PATH_A="TSV_HERE/"
 
-# ============================================
-# PLEASE EDIT THESE VARIABLES
-# ============================================
-PROJECT_NUMBER="8"
-DATA_FILE_PATH="TSV_HERE/"
-# ============================================
+# --- Script Initialization ---
+DATA_FILE_A=$(find "$DATA_FILE_PATH_A" -maxdepth 1 -name "*.tsv" -print -quit)
+[ -z "$DATA_FILE_A" ] && { echo "Error: No .tsv file found in '$DATA_FILE_PATH_A' for Script A"; exit 1; }
+DELIMITER_A=$'\t'
+HEADERS_A=$(head -n 1 "$DATA_FILE_A")
 
+# --- Dynamic Column Indexing ---
+get_col_index_A() {
+  echo "$HEADERS_A" | tr "$DELIMITER_A" '\n' | grep -n -i "$1" | cut -d: -f1
+}
 
-# --- Script setup and initialization ---
-DATA_FILE=$(find "$DATA_FILE_PATH" -maxdepth 1 \( -name "*.tsv" -o -name "*.csv" \) -print -quit)
-ERROR_LOG_FILE="${DATA_FILE_PATH}errors.md"
-
-if [ -z "$DATA_FILE" ]; then
-  echo "Error: No .tsv or .csv file found in '$DATA_FILE_PATH'. Exiting."
-  exit 1
-fi
-
-echo "Processing file: $DATA_FILE"
-DELIMITER=$'\t'
-if [[ "$DATA_FILE" == *.csv ]]; then
-  DELIMITER=','
-fi
-rm -f "$ERROR_LOG_FILE"
-
-# --- Read headers for column mapping ---
-IFS="$DELIMITER" read -r -a HEADERS < <(head -n 1 "$DATA_FILE")
+LOCAL_ID_COL_A=$(get_col_index_A "LOCAL_ID")
+ISSUE_TITLE_COL_A=$(get_col_index_A "ISSUE_TITLE")
+ISSUE_BODY_COL_A=$(get_col_index_A "ISSUE_BODY")
 
 # ===================================================================================
-# PHASE 1: PRE-PROCESS AND CREATE ALL LABELS
+# PHASE 1 (SCRIPT A): PRE-PROCESS AND CREATE ALL LABELS
 # ===================================================================================
-echo "---"
-echo "Phase 1: Finding and creating all required labels..."
-declare -A all_labels # Use an associative array to store unique labels
-tail -n +2 "$DATA_FILE" | while IFS= read -r line; do
-  IFS="$DELIMITER" read -r -a values <<< "$line"
-  for i in "${!HEADERS[@]}"; do
-    header=$(echo "${HEADERS[$i]}" | tr -d '\r')
-    value=$(echo "${values[$i]}" | tr -d '\r')
-    if [[ -n "$value" ]]; then
-      if [[ "$header" == "LOCAL_ID" ]]; then
-        all_labels["ID:$value"]=1
-      elif [[ "$header" == ISSUE_LABEL_* ]]; then
-        all_labels["$value"]=1
-      fi
+echo "--- Script A, Phase 1: Creating all required labels... ---"
+declare -A all_labels_A
+tail -n +2 "$DATA_FILE_A" | while IFS="$DELIMITER_A" read -r -a values; do
+  local_id_A="${values[$((LOCAL_ID_COL_A-1))]}"
+  [ -n "$local_id_A" ] && all_labels_A["ID:$local_id_A"]=1
+  for i in "${!values[@]}"; do
+    header_A=$(echo "$HEADERS_A" | cut -f$((i+1)))
+    if [[ "$header_A" == *ISSUE_LABEL* ]]; then
+      [ -n "${values[$i]}" ] && all_labels_A["${values[$i]}"]=1
     fi
   done
 done
 
-for label in "${!all_labels[@]}"; do
-  random_color=$(openssl rand -hex 3)
-  echo "Ensuring label exists: $label"
-  gh label create "$label" --color "$random_color" --description "Auto-generated" || true
+for label in "${!all_labels_A[@]}"; do
+  gh label create "$label" --color "$(openssl rand -hex 3)" --description "Auto-generated" || true
 done
 echo "Label creation phase complete."
-echo "---"
-# ===================================================================================
-# END OF PHASE 1
 # ===================================================================================
 
-
 # ===================================================================================
-# PHASE 2: PROCESS ROWS AND CREATE ISSUES
+# PHASE 2 (SCRIPT A): PROCESS ROWS AND CREATE ISSUES
 # ===================================================================================
-echo "Phase 2: Creating and updating issues..."
+echo "--- Script A, Phase 2: Creating and updating issues... ---"
+tail -n +2 "$DATA_FILE_A" | while IFS="$DELIMITER_A" read -r -a values; do
+  issue_title_A="${values[$((ISSUE_TITLE_COL_A-1))]}"
+  issue_body_A=$(echo "${values[$((ISSUE_BODY_COL_A-1))]}" | sed 's/;/\\n/g')
+  local_id_A="${values[$((LOCAL_ID_COL_A-1))]}"
 
-process_row() {
-  local row_content="$1"
-  local local_id=""
-  local issue_title=""
-  local issue_body=""
-  local issue_labels=()
-  # declare -A project_fields # Project functionality is disabled
-
-  # Stricter parsing loop to correctly identify columns
-  IFS="$DELIMITER" read -r -a values <<< "$row_content"
-  for i in "${!HEADERS[@]}"; do
-    header=$(echo "${HEADERS[$i]}" | tr -d '\r')
-    value=$(echo "${values[$i]}" | tr -d '\r')
-
-    if [[ "$header" == "LOCAL_ID" ]]; then
-      local_id="$value"
-      [ -n "$value" ] && issue_labels+=("ID:$value")
-    elif [[ "$header" == "ISSUE_TITLE" ]]; then
-      issue_title="$value"
-    elif [[ "$header" == "ISSUE_BODY" ]]; then
-      issue_body=$(echo "$value" | sed 's/;/\\n/g')
-    elif [[ "$header" == ISSUE_LABEL_* ]]; then
-      [ -n "$value" ] && issue_labels+=("$value")
-    # elif [[ "$header" == PROJECT_FIELD_* ]]; then
-    #   [ -n "$value" ] && project_fields["${header#PROJECT_FIELD_}"]="$value"
-    fi # All other columns are implicitly ignored
+  issue_labels_A=()
+  [ -n "$local_id_A" ] && issue_labels_A+=("ID:$local_id_A")
+  for i in "${!values[@]}"; do
+    header_A=$(echo "$HEADERS_A" | cut -f$((i+1)))
+    if [[ "$header_A" == *ISSUE_LABEL* ]]; then
+      [ -n "${values[$i]}" ] && issue_labels_A+=("${values[$i]}")
+    fi
   done
 
-  if [ -z "$issue_title" ]; then
-    echo "Skipping row with empty title."
-    return
-  fi
-
-  # Prepare label arguments for the 'gh issue create' command
-  label_args=()
-  for label in "${issue_labels[@]}"; do
-    label_args+=("--label" "$label")
+  label_args_A=()
+  for label in "${issue_labels_A[@]}"; do
+    label_args_A+=("--label" "$label")
   done
 
-  # Check for and Create/Update Issue
-  echo "ID:$local_id - Processing issue: '$issue_title'"
-  existing_issue_url=$(gh issue list --search "in:title \"$issue_title\"" --state all --limit 1 --json url -q '.[0].url' || echo "")
-
-  local issue_url=""
-  if [ -n "$existing_issue_url" ]; then
-    echo "ID:$local_id - Found existing issue. Updating: $existing_issue_url"
-    issue_url=$existing_issue_url
-    gh issue edit "$issue_url" --body "$issue_body"
-    # Also update labels on existing issues
-    for label in "${issue_labels[@]}"; do
-        gh issue edit "$issue_url" --add-label "$label" || true
+  existing_issue_url_A=$(gh issue list --search "in:title \"$issue_title_A\"" --state all --limit 1 --json url -q '.[0].url' || echo "")
+  if [ -n "$existing_issue_url_A" ]; then
+    echo "ID:$local_id_A - Updating issue: '$issue_title_A'"
+    gh issue edit "$existing_issue_url_A" --body "$issue_body_A"
+    for label in "${issue_labels_A[@]}"; do
+      gh issue edit "$existing_issue_url_A" --add-label "$label" || true
     done
   else
-    echo "ID:$local_id - No existing issue found. Creating new issue."
-    issue_url=$(gh issue create --title "$issue_title" --body "$issue_body" "${label_args[@]}")
+    echo "ID:$local_id_A - Creating issue: '$issue_title_A'"
+    gh issue create --title "$issue_title_A" --body "$issue_body_A" "${label_args_A[@]}"
   fi
-
-  if [ -z "$issue_url" ]; then
-    echo "Failed to create or find issue."
-    return 1 # Triggers error logging
-  fi
-
-  # --- All Project and Sub-issue functionality is disabled ---
-  #
-  # echo "ID:$local_id - Adding issue to project $PROJECT_NUMBER..."
-  # item_id=$(gh project item-create "$PROJECT_NUMBER" --owner "@me" --issue "$issue_url" --format json | jq -r '.id')
-  #
-  # if [ -z "$item_id" ]; then
-  #   echo "Failed to add issue to project."
-  #   return 1
-  # fi
-  #
-  # for field_name in "${!project_fields[@]}"; do
-  #     field_value="${project_fields[$field_name]}"
-  #     echo "ID:$local_id - Updating project field '$field_name' to '$field_value'"
-  #     gh project item-edit --id "$item_id" --field-name "$field_name" --text "$field_value"
-  # done
-}
-
-# --- Execution ---
-# Use a while-read loop for safety and improved error logging
-tail -n +2 "$DATA_FILE" | while IFS= read -r line; do
-    # For each line, attempt to run process_row. Capture STDERR to a variable on failure.
-    error_output=$(process_row "$line" 2>&1) || {
-        # This block runs if process_row fails (returns non-zero)
-        IFS= read -r local_id issue_title <<<$(echo "$line" | cut -f1,2) # Get ID and Title for logging
-        echo "---" >> "$ERROR_LOG_FILE"
-        echo "Timestamp: $(date)" >> "$ERROR_LOG_FILE"
-        echo "Failed to process row with LOCAL_ID: $local_id and Title: '$issue_title'" >> "$ERROR_LOG_FILE"
-        echo "**Error Message:**" >> "$ERROR_LOG_FILE"
-        echo "\`\`\`" >> "$ERROR_LOG_FILE"
-        echo "$error_output" >> "$ERROR_LOG_FILE"
-        echo "\`\`\`" >> "$ERROR_LOG_FILE"
-    }
-    # IMPORTANT: Wait for 1 second to avoid hitting the API rate limit
-    sleep 1
+  sleep 1
 done
-
-echo "Script finished."
-if [ -f "$ERROR_LOG_FILE" ]; then
-  echo "Some rows failed to process. Errors were logged to $ERROR_LOG_FILE"
-fi
+echo "Script A finished."
+# ===================================================================================
+# END OF SCRIPT A
+# ===================================================================================
